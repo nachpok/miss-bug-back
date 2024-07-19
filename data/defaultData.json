@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "b-101",
+        "title": "Cannot save a Car",
+        "severity": 3,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b-102",
+        "title": "Cannot save a Car",
+        "severity": 3,
+        "createdAt": 1542107359453
+    },
+    {
+        "_id": "b-103",
+        "title": "Cannot save a Car",
+        "severity": 3,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b-104",
+        "title": "Cannot save a Car",
+        "severity": 3,
+        "createdAt": 1542107359455
+    }
+]

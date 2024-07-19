@@ -1,0 +1,26 @@
+{
+  "name": "miss-bug-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --ignore data.json --ignore defaultData.json server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachpok/miss-bug-back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachpok/miss-bug-back/issues"
+  },
+  "homepage": "https://github.com/nachpok/miss-bug-back#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
