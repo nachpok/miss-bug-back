@@ -36,8 +36,8 @@ app.get('/api/bug', async (req, res) => {
 })
 
 app.get('/api/bug/save', async (req, res) => {
-    const { _id, title, severity } = req.query
-    const bugToSave = { _id, title, severity: +severity }
+    const { _id, title, severity, description } = req.query
+    const bugToSave = { _id, title, severity: +severity, description }
     try {
         const savedBug = await bugService.save(bugToSave)
         res.send(savedBug)
@@ -79,6 +79,6 @@ app.get('/api/bug/:bugId/remove', async (req, res) => {
 
 
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+app.listen(3030, () => {
+    console.log("Server is running on port 3030");
 });

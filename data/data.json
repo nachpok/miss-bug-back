@@ -13,18 +13,22 @@
     {
         "_id": "b-103",
         "title": "Cannot save a Car",
-        "severity": 3,
-        "createdAt": 1542107359454
-    },
-    {
-        "_id": "b-104",
-        "title": "Cannot save a Car",
-        "severity": 3,
-        "createdAt": 1542107359455
+        "severity": 33
     },
     {
         "_id": "sdyYU2",
         "title": "blabla",
-        "severity": null
+        "severity": 33
+    },
+    {
+        "_id": "OLDdun",
+        "title": "my name is bla",
+        "severity": 3324
+    },
+    {
+        "_id": "HZMqeP",
+        "title": "title a",
+        "severity": -34,
+        "description": "this is some description about nothing"
     }
 ]
