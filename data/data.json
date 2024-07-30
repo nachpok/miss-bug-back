@@ -1,34 +1,24 @@
 [
     {
-        "_id": "b-101",
-        "title": "blabla",
-        "severity": null
-    },
-    {
-        "_id": "b-102",
-        "title": "Cannot save a Car",
-        "severity": 3,
-        "createdAt": 1542107359453
-    },
-    {
-        "_id": "b-103",
-        "title": "Cannot save a Car",
-        "severity": 33
-    },
-    {
         "_id": "sdyYU2",
-        "title": "blabla",
-        "severity": 33
+        "title": "Bug A",
+        "severity": 2,
+        "description": "this is some description about nothing",
+        "createdAt": "2024-02-20T12:00:00.000Z",
+        "labels": [
+            "label1",
+            "label2"
+        ]
     },
     {
         "_id": "OLDdun",
-        "title": "my name is bla",
-        "severity": 3324
-    },
-    {
-        "_id": "HZMqeP",
-        "title": "title a",
-        "severity": -34,
-        "description": "this is some description about nothing"
+        "title": "Bug B",
+        "severity": 5,
+        "description": "this is some description about nothing",
+        "createdAt": "2024-02-21T12:00:00.000Z",
+        "labels": [
+            "label1",
+            "label2"
+        ]
     }
 ]

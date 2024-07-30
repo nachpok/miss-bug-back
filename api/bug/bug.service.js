@@ -1,9 +1,9 @@
-import { loggerService } from "./logger.service.js";
-import { makeId, readJsonFile } from "./util.service.js";
+import { loggerService } from "../../services/logger.service.js";
+import { makeId, readJsonFile } from "../../services/util.service.js";
 import fs from "fs";
+import dayjs from "dayjs";
 
-
-const bugs = readJsonFile("data/data.json")
+let bugs = readJsonFile("data/data.json")
 
 export const bugService = {
     query,
@@ -14,17 +14,18 @@ export const bugService = {
 }
 
 async function query(filterBy) {
+    console.log('filterBy bug.service', filterBy)
     let bugsToReturn = bugs
     try {
-        if (filterBy.title) {
+        if (filterBy?.title) {
             const regex = new RegExp(`^${filterBy.title}`, 'i')
             bugsToReturn = bugsToReturn.filter(bug => regex.test(bug.title))
         }
-        if (filterBy.severity) {
-            bugsToReturn = bugsToReturn.filter(bug => bug.severity === filterBy.severity)
+        if (filterBy?.severity) {
+            bugsToReturn = bugsToReturn.filter(bug => bug.severity == filterBy.severity)
         }
-        if (filterBy.createdAt) {
-            bugsToReturn = bugsToReturn.filter(bug => bug.createdAt === filterBy.createdAt)
+        if (filterBy?.createdAt) {
+            bugsToReturn = bugsToReturn.filter(bug => dayjs(bug.createdAt).isSame(dayjs(filterBy.createdAt), 'day'))
         }
         return bugsToReturn
     } catch (err) {
