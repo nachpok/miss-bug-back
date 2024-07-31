@@ -5,10 +5,24 @@ import dayjs from "dayjs";
 
 const BUGS_PER_PAGE = 5
 
-const data = readJsonFile("data/data.json")
 
-let bugs = data.bugs
-let labels = data.labels
+let bugs = []
+let labels = []
+
+async function loadData() {
+    try {
+        const data = await readJsonFile("data/data.json");
+        bugs = data.bugs;
+        labels = data.labels;
+    } catch (err) {
+        console.error('Error loading data:', err);
+        bugs = [];
+        labels = [];
+    }
+}
+
+loadData();
+
 
 export const bugService = {
     query,
@@ -87,7 +101,12 @@ async function remove(bugId) {
     }
     const bugIndex = bugs.indexOf(bug)
     bugs.splice(bugIndex, 1)
-    // await _saveBugsToFile()
+    try {
+        await _saveBugsToFile();
+    } catch (err) {
+        console.error('Error saving bugs to file after removal:', err);
+        throw err; // or handle it as appropriate for your application
+    }
 }
 
 async function save(bug) {
@@ -107,8 +126,13 @@ async function reset() {
 }
 
 function _saveBugsToFile(path = "data/data.json") {
-    writeJsonFile(path, bugs)
+    const dataToSave = {
+        bugs: bugs,
+        labels: labels
+    };
+    writeJsonFile(path, dataToSave);
 }
+///Users/nach/Documents/GitHub/miss-bug-back/data/data.json
 
 function _saveBugsDefaultBugsToFile() {
     const defaultBugs = readJsonFile("data/defaultData.json")
