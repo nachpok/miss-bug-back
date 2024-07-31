@@ -1,6 +1,10 @@
+import dayjs from 'dayjs'
 import { bugService } from './bug.service.js'
+import { getCountOfVisitedBugs } from '../../services/util.service.js'
 
 //TODO add filter
+
+let visitedBugs = []
 export const getBugs = async (req, res) => {
     const { title, severity, createdAt, sortBy, isPaginated, page, labels } = req.query
     const filterBy = {}
@@ -12,7 +16,6 @@ export const getBugs = async (req, res) => {
     if (isPaginated && isPaginated.trim() !== '') filterBy.isPaginated = isPaginated
     if (page && page.trim() !== '') filterBy.page = page
     if (labels) filterBy.labels = labels
-    console.log('filterBy', filterBy)
 
     try {
         const bugs = await bugService.query(filterBy)
@@ -31,7 +34,34 @@ export const getBug = async (req, res) => {
     }
 
     try {
+
+        // const countOfVisitedBugs = getCountOfVisitedBugs(visitedBugs)
         const bug = await bugService.getById(bugId)
+        const newCookie = req.cookies.visitedBugs ? JSON.parse(req.cookies.visitedBugs) : [];
+        visitedBugs.push(...newCookie)
+        const countOfVisitedBugs = getCountOfVisitedBugs(visitedBugs)
+        console.log('countOfVisitedBugs', countOfVisitedBugs)
+        if (countOfVisitedBugs >= 3) {
+            res.status(403).send('You have visited 3 bugs in the last 3 hours. Please wait before visiting more bugs.')
+            return
+        }
+        const currentTime = dayjs().format('YYYY-MM-DD HH:mm:ss');
+        const existingIndex = visitedBugs.findIndex(visit => visit.bugId === bugId);
+        if (existingIndex !== -1) {
+            visitedBugs[existingIndex].timestamp = currentTime;
+        } else {
+            visitedBugs.push({ bugId, timestamp: currentTime });
+        }
+
+        res.cookie('visitedBugs', JSON.stringify(visitedBugs), {
+            maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+            httpOnly: false,
+            secure: false, // false for development
+            sameSite: 'lax',
+            path: '/',
+        });
+
+
         res.send(bug)
     } catch (error) {
         res.status(404).send(error)
@@ -71,7 +101,6 @@ export const addBug = async (req, res) => {
 }
 
 export const updateBug = async (req, res) => {
-    console.log('req.body', req.body)
     const { _id, title, description, severity, labels } = req.body
 
     if (!_id) {

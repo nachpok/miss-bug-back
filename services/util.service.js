@@ -1,3 +1,4 @@
+import dayjs from 'dayjs'
 import fs from 'fs'
 
 export function makeId(length = 6) {
@@ -15,4 +16,14 @@ export function readJsonFile(path) {
     const str = fs.readFileSync(path, 'utf8')
     const json = JSON.parse(str)
     return json
+}
+
+export function writeJsonFile(path, data) {
+    // const str = JSON.stringify(data)
+    // fs.writeFileSync(path, str)
+}
+
+export function getCountOfVisitedBugs(visitedBugs, timeframe = 3) {
+    const filteredBugs = visitedBugs.filter(bug => dayjs().diff(bug.timestamp, 'hours') < timeframe);
+    return filteredBugs.length
 }

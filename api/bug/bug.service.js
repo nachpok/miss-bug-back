@@ -1,12 +1,14 @@
 import { loggerService } from "../../services/logger.service.js";
-import { makeId, readJsonFile } from "../../services/util.service.js";
+import { makeId, readJsonFile, writeJsonFile } from "../../services/util.service.js";
 import fs from "fs";
 import dayjs from "dayjs";
 
 const BUGS_PER_PAGE = 5
 
-let bugs = readJsonFile("data/data.json").bugs
-let labels = readJsonFile("data/data.json").labels
+const data = readJsonFile("data/data.json")
+
+let bugs = data.bugs
+let labels = data.labels
 
 export const bugService = {
     query,
@@ -17,7 +19,6 @@ export const bugService = {
 }
 
 async function query(filterBy) {
-    console.log('filterBy bug.service', filterBy)
     let bugsToReturn = bugs
     try {
         if (filterBy?.title) {
@@ -58,7 +59,7 @@ async function query(filterBy) {
         }
         const data = {
             bugs: bugsToReturn,
-            totalBugs: bugs.length,
+            totalBugs: bugs?.length,
             pageSize: BUGS_PER_PAGE,
             labels
         }
@@ -86,7 +87,7 @@ async function remove(bugId) {
     }
     const bugIndex = bugs.indexOf(bug)
     bugs.splice(bugIndex, 1)
-    await _saveBugsToFile()
+    // await _saveBugsToFile()
 }
 
 async function save(bug) {
@@ -102,18 +103,11 @@ async function save(bug) {
 }
 
 async function reset() {
-    console.log("Resetting bugs..."); // Add logging
     await _saveBugsDefaultBugsToFile()
 }
 
 function _saveBugsToFile(path = "data/data.json") {
-    return new Promise((resolve, reject) => {
-        const data = JSON.stringify(bugs, null, 4)
-        fs.writeFile(path, data, (err) => {
-            if (err) return reject(err)
-            resolve()
-        })
-    })
+    writeJsonFile(path, bugs)
 }
 
 function _saveBugsDefaultBugsToFile() {
@@ -126,7 +120,6 @@ function _saveBugsDefaultBugsToFile() {
                 return reject(err)
             }
             bugs = defaultBugs
-            console.log("Bugs successfully reset to default"); // Add logging
             resolve()
         })
     })

@@ -1,0 +1,11 @@
+[
+    {
+        "_id": "u101",
+        "fullName": "John Doe",
+        "username": "john.doe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "role": "admin",
+        "score": 100
+    }
+]
