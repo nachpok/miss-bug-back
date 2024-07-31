@@ -21,12 +21,15 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(cookieParser())
-app.use((req, res, next) => {
-    console.log('Cookies received:', req.cookies);
-    next();
-});
 app.use('/api/bug', bugRoutes)
 app.use('/api/user', userRoutes)
+
+app.get('/api/visit-count', (req, res) => {
+    let visitCount = req.cookies.visitCount || 0
+    visitCount++
+    res.cookie('visitCount', visitCount)
+    res.send(`You have visited this page ${visitCount} times.`)
+})
 
 
 const port = 3030
