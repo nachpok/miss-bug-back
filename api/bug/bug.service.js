@@ -3,7 +3,10 @@ import { makeId, readJsonFile } from "../../services/util.service.js";
 import fs from "fs";
 import dayjs from "dayjs";
 
-let bugs = readJsonFile("data/data.json")
+const BUGS_PER_PAGE = 5
+
+let bugs = readJsonFile("data/data.json").bugs
+let labels = readJsonFile("data/data.json").labels
 
 export const bugService = {
     query,
@@ -27,7 +30,39 @@ async function query(filterBy) {
         if (filterBy?.createdAt) {
             bugsToReturn = bugsToReturn.filter(bug => dayjs(bug.createdAt).isSame(dayjs(filterBy.createdAt), 'day'))
         }
-        return bugsToReturn
+
+        if (filterBy?.labels && filterBy.labels.length > 0) {
+            bugsToReturn = bugsToReturn.filter(bug =>
+                bug.labelIds.some(labelId => filterBy.labels.includes(labelId))
+            )
+        }
+        if (filterBy?.sortBy) {
+            switch (filterBy.sortBy) {
+                case 'severity':
+                    bugsToReturn = bugsToReturn.sort((a, b) => a.severity - b.severity)
+                    break
+                case 'createdAt':
+                    bugsToReturn = bugsToReturn.sort((a, b) => dayjs(a.createdAt).isAfter(dayjs(b.createdAt)) ? 1 : -1)
+                    break
+                case 'title':
+                    bugsToReturn = bugsToReturn.sort((a, b) => a.title.localeCompare(b.title))
+                    break
+                default:
+                    bugsToReturn = bugsToReturn.sort((a, b) => dayjs(a[filterBy.sortBy]).isAfter(dayjs(b[filterBy.sortBy])) ? 1 : -1)
+            }
+        }
+        if (filterBy?.isPaginated === 'true' && filterBy?.page) {
+            const page = parseInt(filterBy.page)
+            const bugsToSlice = bugsToReturn.slice((page - 1) * BUGS_PER_PAGE, page * BUGS_PER_PAGE)
+            bugsToReturn = bugsToSlice
+        }
+        const data = {
+            bugs: bugsToReturn,
+            totalBugs: bugs.length,
+            pageSize: BUGS_PER_PAGE,
+            labels
+        }
+        return data
     } catch (err) {
         loggerService.error(err)
         throw err
@@ -39,6 +74,8 @@ async function getById(bugId) {
     if (!bug) {
         throw new Error("Could not find bug with id: " + bugId)
     }
+    const bugLabels = bug.labelIds.map(labelId => labels.find(label => label.id === labelId))
+    bug.labels = bugLabels
     return bug
 }
 

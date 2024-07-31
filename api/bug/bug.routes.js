@@ -7,6 +7,6 @@ router.get('/', getBugs)
 router.get('/:bugId', getBug)
 router.delete('/:bugId', removeBug)
 router.post('/', addBug)
-router.put('/', updateBug)
+router.put('/:bugId', updateBug)
 
 export const bugRoutes = router

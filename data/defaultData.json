@@ -1,35 +1,97 @@
-[
-    {
-        "_id": "sdyYU2",
-        "title": "Bug A",
-        "severity": 2,
-        "description": "this is some description about nothing",
-        "createdAt": "2024-02-20T12:00:00.000Z",
-        "labels": [
-            "label1",
-            "label2"
-        ]
-    },
-    {
-        "_id": "OLDdun",
-        "title": "Bug B",
-        "severity": 3,
-        "description": "this is some description about nothing",
-        "createdAt": "2024-02-21T12:00:00.000Z",
-        "labels": [
-            "label1",
-            "label2"
-        ]
-    },
-    {
-        "_id": "HZMqeP",
-        "title": "Bug C",
-        "severity": 2,
-        "description": "this is some description about nothing",
-        "createdAt": "2024-02-22T12:00:00.000Z",
-        "labels": [
-            "label1",
-            "label2"
-        ]
-    }
-]
+{
+    "bugs": [
+        {
+            "_id": "sdyYU2",
+            "title": "Bug A",
+            "severity": 2,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-20T12:00:00.000Z",
+            "labelIds": [
+                "label1"
+            ]
+        },
+        {
+            "_id": "OLDdun",
+            "title": "Bug B",
+            "severity": 5,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-21T12:00:00.000Z",
+            "labelIds": [
+                "label2"
+            ]
+        },
+        {
+            "_id": "liugwe3",
+            "title": "Bug C",
+            "severity": 2,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-20T12:00:00.000Z",
+            "labelIds": [
+                "label2"
+            ]
+        },
+        {
+            "_id": "sdfsdf",
+            "title": "Bug D",
+            "severity": 5,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-21T12:00:00.000Z",
+            "labelIds": [
+                "label1"
+            ]
+        },
+        {
+            "_id": "oKe4de",
+            "title": "Bug E",
+            "severity": 2,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-20T12:00:00.000Z",
+            "labelIds": [
+                "label1",
+                "label2"
+            ]
+        },
+        {
+            "_id": "MlXede",
+            "title": "Bug F",
+            "severity": 5,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-21T12:00:00.000Z",
+            "labelIds": [
+                "label1",
+                "label2"
+            ]
+        },
+        {
+            "_id": "POPedt",
+            "title": "Bug G",
+            "severity": 2,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-20T12:00:00.000Z",
+            "labelIds": [
+                "label2"
+            ]
+        },
+        {
+            "_id": "cxvxcv",
+            "title": "Bug H",
+            "severity": 5,
+            "description": "this is some description about nothing",
+            "createdAt": "2024-02-21T12:00:00.000Z",
+            "labelIds": [
+                "label1",
+                "label2"
+            ]
+        }
+    ],
+    "labels": [
+        {
+            "id": "label1",
+            "title": "label1"
+        },
+        {
+            "id": "label2",
+            "title": "label2"
+        }
+    ]
+}
