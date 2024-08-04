@@ -1,11 +1,26 @@
 [
-    {
-        "_id": "u101",
-        "fullName": "John Doe",
-        "username": "john.doe",
-        "email": "john.doe@example.com",
-        "password": "password123",
-        "role": "admin",
-        "score": 100
-    }
+  {
+    "_id": "u101",
+    "fullName": "John Doe II",
+    "username": "john.doe",
+    "email": "john.doe@example.com",
+    "password": "password123",
+    "role": "admin",
+    "score": 100
+  },
+  {
+    "_id": "u102",
+    "fullName": "Jane Doe",
+    "username": "jane.doe",
+    "email": "jane.doe@example.com",
+    "password": "password123",
+    "role": "user",
+    "score": 54
+  },
+  {
+    "username": "nik",
+    "password": "$2b$10$xzjyo0CrX98zUjFSPTu7E.4Qp3baHOojWal5kpsGC9tKLwQr1AV7C",
+    "fullname": "nate poky",
+    "_id": "FgW0yk"
+  }
 ]

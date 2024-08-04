@@ -8,7 +8,11 @@
             "createdAt": "2024-02-20T12:00:00.000Z",
             "labelIds": [
                 "label1"
-            ]
+            ],
+            "creator": {
+                "_id": "u101",
+                "fullName": "John Doe"
+            }
         },
         {
             "_id": "OLDdun",
@@ -18,7 +22,11 @@
             "createdAt": "2024-02-21T12:00:00.000Z",
             "labelIds": [
                 "label2"
-            ]
+            ],
+            "creator": {
+                "_id": "u102",
+                "fullName": "Jane Doe"
+            }
         },
         {
             "_id": "liugwe3",
@@ -28,7 +36,11 @@
             "createdAt": "2024-02-20T12:00:00.000Z",
             "labelIds": [
                 "label2"
-            ]
+            ],
+            "creator": {
+                "_id": "u103",
+                "fullName": "John Smith"
+            }
         },
         {
             "_id": "sdfsdf",
@@ -38,7 +50,11 @@
             "createdAt": "2024-02-21T12:00:00.000Z",
             "labelIds": [
                 "label1"
-            ]
+            ],
+            "creator": {
+                "_id": "u104",
+                "fullName": "Jane Smith"
+            }
         },
         {
             "_id": "oKe4de",
@@ -49,7 +65,11 @@
             "labelIds": [
                 "label1",
                 "label2"
-            ]
+            ],
+            "creator": {
+                "_id": "u105",
+                "fullName": "John Doe"
+            }
         },
         {
             "_id": "MlXede",

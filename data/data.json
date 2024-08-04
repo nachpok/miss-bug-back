@@ -1,6 +1,69 @@
 {
   "bugs": [
     {
+      "_id": "sdyYU2",
+      "title": "Bug A",
+      "severity": 2,
+      "description": "this is some description about nothing",
+      "createdAt": "2024-02-20T12:00:00.000Z",
+      "labelIds": [
+        "label1"
+      ],
+      "creator": {
+        "_id": "u101",
+        "fullName": "John Doe"
+      }
+    },
+    {
+      "_id": "OLDdun",
+      "title": "Bug B",
+      "description": "this is some description about nothing",
+      "severity": 44
+    },
+    {
+      "_id": "liugwe3",
+      "title": "Bug C",
+      "severity": 2,
+      "description": "this is some description about nothing",
+      "createdAt": "2024-02-20T12:00:00.000Z",
+      "labelIds": [
+        "label2"
+      ],
+      "creator": {
+        "_id": "u103",
+        "fullName": "John Smith"
+      }
+    },
+    {
+      "_id": "sdfsdf",
+      "title": "Bug D",
+      "severity": 5,
+      "description": "this is some description about nothing",
+      "createdAt": "2024-02-21T12:00:00.000Z",
+      "labelIds": [
+        "label1"
+      ],
+      "creator": {
+        "_id": "u104",
+        "fullName": "Jane Smith"
+      }
+    },
+    {
+      "_id": "oKe4de",
+      "title": "Bug E",
+      "severity": 2,
+      "description": "this is some description about nothing",
+      "createdAt": "2024-02-20T12:00:00.000Z",
+      "labelIds": [
+        "label1",
+        "label2"
+      ],
+      "creator": {
+        "_id": "u105",
+        "fullName": "John Doe"
+      }
+    },
+    {
       "_id": "MlXede",
       "title": "Bug F",
       "severity": 5,

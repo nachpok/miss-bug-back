@@ -1,23 +1,41 @@
 import { userService } from './user.service.js'
 
-export function getUsers(req, res) {
-    const users = userService.query()
-    res.send(users)
+export async function getUsers(req, res) {
+    try {
+        const users = await userService.query()
+        res.send(users)
+    } catch (err) {
+        res.status(500).send(err)
+    }
 }
 
-export function getUser(req, res) {
-    const { userId } = req.params
-    const user = userService.getById(userId)
-    res.send(user)
+export async function getUser(req, res) {
+    try {
+        const { userId } = req.params
+        const user = await userService.getById(userId)
+        res.send(user)
+    } catch (err) {
+        res.status(500).send(err)
+    }
 }
 
-export function updateUser(req, res) {
-    const user = userService.save(req.body)
-    res.send(user)
+export async function updateUser(req, res) {
+    try {
+        const user = userService.save(req.body)
+        res.send(user)
+    } catch (err) {
+        loggerService.error('Failed to update user', err)
+        res.status(400).send({ err: 'Failed to update user' })
+    }
 }
 
-export function removeUser(req, res) {
-    const { userId } = req.params
-    const user = userService.remove(userId)
-    res.send(user)
+export async function removeUser(req, res) {
+    try {
+        const { userId } = req.params
+        const user = userService.remove(userId)
+        res.send({ msg: 'Deleted successfully' })
+    } catch (err) {
+        loggerService.error('Failed to delete user', err)
+        res.status(400).send({ err: 'Failed to delete user' })
+    }
 }

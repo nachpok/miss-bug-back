@@ -47,9 +47,10 @@ async function query(filterBy) {
         }
 
         if (filterBy?.labels && filterBy.labels.length > 0) {
-            bugsToReturn = bugsToReturn.filter(bug =>
-                bug.labelIds.some(labelId => filterBy.labels.includes(labelId))
-            )
+            console.log(filterBy.labels)
+            bugsToReturn = bugsToReturn.filter(bug => {
+                return bug.labelIds?.some(labelId => filterBy.labels.includes(labelId))
+            })
         }
         if (filterBy?.sortBy) {
             switch (filterBy.sortBy) {

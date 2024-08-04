@@ -6,6 +6,15 @@
         "email": "john.doe@example.com",
         "password": "password123",
         "role": "admin",
-        "score": 100
+        "score": 45
+    },
+    {
+        "_id": "u102",
+        "fullName": "Jane Doe",
+        "username": "jane.doe",
+        "email": "jane.doe@example.com",
+        "password": "password123",
+        "role": "user",
+        "score": 54
     }
 ]

@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/nachpok/miss-bug-back#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "cryptr": "^6.3.0",
     "dayjs": "^1.11.12",
     "express": "^4.19.2",
     "nodemon": "^3.1.4",
