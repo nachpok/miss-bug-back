@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --ignore data.json --ignore defaultData.json server.js"
+    "dev": "nodemon --ignore data.json --ignore defaultData.json server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

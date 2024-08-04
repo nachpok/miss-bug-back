@@ -12,7 +12,9 @@ const corsOptions = {
         'http://127.0.0.1:5173',
         'http://localhost:5173',
         'http://127.0.0.1:5174',
-        'http://localhost:5174'
+        'http://localhost:5174',
+        process.env.VITE_API_URL
+
     ],
     credentials: true
 }
@@ -21,6 +23,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(cookieParser())
+app.use(express.static('public'))
 app.use('/api/bug', bugRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
@@ -33,8 +36,7 @@ app.get('/api/visit-count', (req, res) => {
 })
 
 
-const port = 3030
+const port = process.env.PORT || 3030
 app.listen(port, () =>
-    // loggerService.info(`Server listening on port http://localhost:${port}/`)
-    console.log(`Server listening on port http://localhost:${port}/`)
+    console.log(`Server listening on port:${port}/`)
 )
