@@ -34,6 +34,7 @@ function save(user) {
         data.push(user)
     }
     _saveUserToFile()
+    return user
 }
 function reset() {
     data = readJsonFile("data/defaultUser.json")

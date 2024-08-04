@@ -120,3 +120,194 @@
 4.8.2024, 11:44:33 - INFO - User login:  | null
 4.8.2024, 11:44:54 - INFO - User login:  | {"_id":"FgW0yk","fullname":"nate poky"}
 4.8.2024, 11:45:49 - INFO - User login:  | {"_id":"FgW0yk","fullname":"nate poky"}
+4.8.2024, 11:49:34 - INFO - Visited route | /
+4.8.2024, 11:49:34 - INFO - Visited route | /
+4.8.2024, 11:49:37 - INFO - Visited route | /
+4.8.2024, 11:49:37 - INFO - Visited route | /
+4.8.2024, 13:17:37 - DEBUG - auth.service - signup with username: nate, fullname: nate poky
+4.8.2024, 13:17:37 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 13:17:37 - INFO - User signup: | {"_id":"2gN0QB","fullname":"nate poky"}
+4.8.2024, 13:20:04 - DEBUG - auth.service - signup with username: nate, fullname: nate poky
+4.8.2024, 13:20:04 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 13:31:54 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 13:31:54 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:09:23 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:11:25 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:16:19 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:32:38 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:41:22 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:41:58 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:46:49 - INFO - User login:  | {"_id":"T5QUi8","fullname":"nate poky"}
+4.8.2024, 14:56:53 - DEBUG - auth.service - signup with username: blabla, fullname: undefined
+4.8.2024, 14:56:53 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 14:57:14 - DEBUG - auth.service - signup with username: blabla, fullname: Mo2Fgfth54aoMC
+4.8.2024, 14:57:14 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:02:03 - DEBUG - auth.service - signup with username: nateddd, fullname: nate pokyddd
+4.8.2024, 15:02:03 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:02:03 - INFO - User signup: | {"_id":"1fAcDd","fullname":"nate pokyddd"}
+4.8.2024, 15:08:37 - INFO - User login:  | null
+4.8.2024, 15:09:42 - DEBUG - auth.service - signup with username: nate, fullname: nate poky
+4.8.2024, 15:09:42 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:09:54 - INFO - User login:  | {"_id":"1JgJK0","fullname":"nate poky"}
+4.8.2024, 15:12:16 - INFO - User login:  | {"_id":"1JgJK0","fullname":"nate poky"}
+4.8.2024, 15:12:26 - DEBUG - auth.service - signup with username: bafdsfds, fullname: nate
+4.8.2024, 15:12:26 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:12:37 - DEBUG - auth.service - signup with username: fdsf, fullname: nate
+4.8.2024, 15:12:37 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:13:13 - DEBUG - auth.service - signup with username: fdsf, fullname: nate
+4.8.2024, 15:13:13 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:13:13 - DEBUG - auth.service - signup with username: fdsf, fullname: nate
+4.8.2024, 15:13:13 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:13:44 - DEBUG - auth.service - signup with username: fdsf, fullname: nate
+4.8.2024, 15:13:44 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:14:11 - DEBUG - auth.service - signup with username: fdsf, fullname: nate
+4.8.2024, 15:14:11 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:14:11 - DEBUG - auth.service - signup with username: fdsf, fullname: nate
+4.8.2024, 15:14:11 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:14:44 - DEBUG - auth.service - signup with username: dddfdsf, fullname: ddd
+4.8.2024, 15:14:44 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:14:55 - DEBUG - auth.service - signup with username: dd, fullname: dddd
+4.8.2024, 15:14:55 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:16:15 - DEBUG - auth.service - signup with username: dd, fullname: dddd
+4.8.2024, 15:16:15 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:16:16 - DEBUG - auth.service - signup with username: dd, fullname: dddd
+4.8.2024, 15:16:16 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:17:11 - DEBUG - auth.service - signup with username: dd, fullname: dddd
+4.8.2024, 15:17:12 - ERROR - Failed to signup Username already taken
+4.8.2024, 15:17:39 - DEBUG - auth.service - signup with username: dd, fullname: dddd
+4.8.2024, 15:18:20 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:18:20 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:18:20 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:18:20 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:18:23 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:18:23 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:18:24 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:18:24 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:18:51 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:18:51 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:19:01 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:19:01 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:19:01 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:19:01 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:19:01 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:19:01 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:19:30 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:19:30 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:19:33 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:19:33 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:19:52 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:19:52 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:25 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:25 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:26 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:26 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:26 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:26 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:26 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:26 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:27 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:27 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:27 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:27 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:49 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:49 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:49 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:49 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:50 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:50 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:50 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:50 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:55 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:55 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:55 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:55 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:55 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:55 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:56 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:56 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:56 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:56 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:56 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:56 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:57 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:57 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:20:57 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:20:57 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:21:06 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:21:06 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:21:09 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:21:09 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:21:09 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:21:09 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:21:10 - DEBUG - auth.service - signup with username: , fullname: nate
+4.8.2024, 15:21:10 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:21:52 - DEBUG - auth.service - signup with username: dfsdfdsfds, fullname: nate
+4.8.2024, 15:22:08 - DEBUG - auth.service - signup with username: 1234, fullname: nate
+4.8.2024, 15:22:17 - DEBUG - auth.service - signup with username: 1234, fullname: fsfdsf
+4.8.2024, 15:23:09 - DEBUG - auth.service - signup with username: 1234, fullname: fsfdsf
+4.8.2024, 15:23:09 - DEBUG - auth.service - signup with username: 1234, fullname: fsfdsf
+4.8.2024, 15:23:17 - DEBUG - auth.service - signup with username: 1234dd, fullname: fsfdsfdd
+4.8.2024, 15:23:23 - INFO - User login:  | {"_id":"1JgJK0","fullname":"nate poky"}
+4.8.2024, 15:23:52 - INFO - User login:  | {"_id":"1JgJK0","fullname":"nate poky"}
+4.8.2024, 15:24:01 - DEBUG - auth.service - signup with username: abcd, fullname: nate
+4.8.2024, 15:25:25 - DEBUG - auth.service - signup with username: abcd, fullname: nate
+4.8.2024, 15:25:29 - DEBUG - auth.service - signup with username: abcdd, fullname: nate
+4.8.2024, 15:25:29 - ERROR - Failed to signup TypeError: Cannot read properties of undefined (reading 'error')
+4.8.2024, 15:26:02 - DEBUG - auth.service - signup with username: abcddd, fullname: nate
+4.8.2024, 15:26:02 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:26:30 - DEBUG - auth.service - signup with username: abcdddd, fullname: nated
+4.8.2024, 15:26:30 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:26:30 - INFO - User signup: | {"_id":"BOPtf8","fullname":"nated"}
+4.8.2024, 15:27:19 - DEBUG - auth.service - signup with username: abababab, fullname: ababab
+4.8.2024, 15:27:20 - DEBUG - auth.route - new account created: undefined
+4.8.2024, 15:27:20 - INFO - User signup: | {"_id":"gEiZfu","fullname":"ababab"}
+4.8.2024, 15:28:10 - DEBUG - auth.service - signup with username: ddddddadfs, fullname: abababsdfsf
+4.8.2024, 15:28:10 - DEBUG - auth.route - new account created: {"username":"ddddddadfs","password":"$2b$10$XdRFdLjQ7f.0/8OQynlJAe7HzrtPlviJJkcv86J35kBdVMv.SbAZy","fullname":"abababsdfsf","_id":"BR2Sib"}
+4.8.2024, 15:32:41 - DEBUG - auth.service - signup with username: dddsafdsf, fullname: abababsdfsf33f
+4.8.2024, 15:32:41 - DEBUG - auth.route - new account created: {"username":"dddsafdsf","password":"$2b$10$ZML95D8stbEzHM7Pko4SZe.y6G/W9FjJ3CpsSP6MfnDd4R/AhJu6W","fullname":"abababsdfsf33f","_id":"H9opXk"}
+4.8.2024, 15:32:41 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:33:03 - DEBUG - auth.service - signup with username: ;jfo;sdafjsdjf, fullname: oiusidfjlsd
+4.8.2024, 15:33:03 - DEBUG - auth.route - new account created: {"username":";jfo;sdafjsdjf","password":"$2b$10$sWJmtz9FK9kO/.DECDdI.OQ.ts.wv2toX5ImNb7EW1zMQjUKY39KG","fullname":"oiusidfjlsd","_id":"hwNdSA"}
+4.8.2024, 15:33:03 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:33:08 - DEBUG - auth.service - signup with username: ;jfo;sdafjsdjf, fullname: oiusidfjlsd
+4.8.2024, 15:33:16 - DEBUG - auth.service - signup with username: jfosdafjsdjf, fullname: oiusidfjlsd
+4.8.2024, 15:33:16 - DEBUG - auth.route - new account created: {"username":"jfosdafjsdjf","password":"$2b$10$3pecdDAo3Fud9JZnO3PCW.35R6yGKi4P5GFd57WSmOazfVk3iS4Au","fullname":"oiusidfjlsd","_id":"KASEml"}
+4.8.2024, 15:33:16 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:33:56 - DEBUG - auth.service - signup with username: tset, fullname: test
+4.8.2024, 15:33:57 - DEBUG - auth.route - new account created: {"username":"tset","password":"$2b$10$R8.I61gT8voxn253yr7hlOdQIvhPfhh5PTr7erKgVd.heQU8cSzWi","fullname":"test","_id":"xJ5P7h"}
+4.8.2024, 15:33:57 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:34:45 - DEBUG - auth.service - signup with username: tset1, fullname: test2
+4.8.2024, 15:34:45 - DEBUG - auth.route - new account created: {"username":"tset1","password":"$2b$10$dJOTQqb8vojmErkeVGKO7utU9SkiX7yYfz4ML6i7xH5lnXZuooqaG","fullname":"test2","_id":"3o8h78"}
+4.8.2024, 15:34:45 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:35:26 - DEBUG - auth.service - signup with username: tset2, fullname: test2
+4.8.2024, 15:35:26 - DEBUG - auth.route - new account created: {"username":"tset2","password":"$2b$10$FsKbBffJCYY78s0em70gHe.Gt5E98cUl72/lMdVKoloGY2VAKZsLi","fullname":"test2","_id":"2UXCQ9"}
+4.8.2024, 15:35:26 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:35:33 - DEBUG - auth.service - signup with username: tset3, fullname: test3
+4.8.2024, 15:35:33 - DEBUG - auth.route - new account created: {"username":"tset3","password":"$2b$10$SDjX5sKR44QHYwXTM6B9.u93pdhnmAdRUnVZkfVFOD5B7ecwfiG1K","fullname":"test3","_id":"tyDXCF"}
+4.8.2024, 15:35:33 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:36:25 - DEBUG - auth.service - signup with username: tset3, fullname: undefined
+4.8.2024, 15:36:25 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:36:32 - DEBUG - auth.service - signup with username: tset3, fullname: undefined
+4.8.2024, 15:36:32 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:37:04 - DEBUG - auth.service - signup with username: tset3, fullname: undefined
+4.8.2024, 15:37:04 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:37:29 - DEBUG - auth.service - signup with username: tset3, fullname: undefined
+4.8.2024, 15:37:29 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:37:29 - DEBUG - auth.service - signup with username: tset3, fullname: undefined
+4.8.2024, 15:37:29 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:38:32 - DEBUG - auth.service - signup with username: tset3, fullname: undefined
+4.8.2024, 15:38:32 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:39:09 - DEBUG - auth.service - signup with username: tset3, fullname: undefined
+4.8.2024, 15:39:09 - ERROR - Failed to signup Missing required signup information
+4.8.2024, 15:39:44 - DEBUG - auth.service - signup with username: tset3, fullname: test3d
+4.8.2024, 15:39:44 - DEBUG - auth.service - signup with username: tset3, fullname: test3d
+4.8.2024, 15:39:49 - DEBUG - auth.service - signup with username: tset33, fullname: test3d
+4.8.2024, 15:39:49 - DEBUG - auth.route - new account created: {"username":"tset33","password":"$2b$10$tu.xP4kj5DbNrAaBhZYoZOKrU2edZBtD1MXKa92XE1i3hVBxDhe/m","fullname":"test3d","_id":"mneSk4"}
+4.8.2024, 15:39:49 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:40:12 - DEBUG - auth.service - signup with username: tset33, fullname: test3d
+4.8.2024, 15:40:12 - DEBUG - auth.route - new account created: {"username":"tset33","password":"$2b$10$kk.lxuxti8ziOvZjqoTeYOIt9rJA1j63r8lyI84TU.IUxaElLw0uK","fullname":"test3d","_id":"bdfWTf"}
+4.8.2024, 15:40:12 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+4.8.2024, 15:40:25 - INFO - User login:  | {"_id":"1JgJK0","fullname":"nate poky"}
+4.8.2024, 15:42:59 - INFO - Visited route | /
+4.8.2024, 15:42:59 - INFO - Visited route | /
+4.8.2024, 15:43:11 - INFO - Visited route | /

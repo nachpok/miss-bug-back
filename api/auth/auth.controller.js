@@ -2,7 +2,7 @@ import { authService } from './auth.service.js'
 import { loggerService } from './../../services/logger.service.js';
 
 export async function login(req, res) {
-    console.log("login")
+    console.log("auth.controller - login")
     const { username, password } = req.body
     console.log("username", username)
     console.log("password", password)
@@ -20,15 +20,17 @@ export async function login(req, res) {
 }
 
 export async function signup(req, res) {
+    console.log("auth.controller - signup")
     try {
         const credentials = req.body
-        console.log(credentials)
-        // Never log passwords
-        // loggerService.debug(credentials)
         const account = await authService.signup(credentials)
+
+        if (account?.error) {
+            return res.status(409).send({ err: account.error })
+        }
         loggerService.debug(`auth.route - new account created: ` + JSON.stringify(account))
 
-        const user = await authService.login(credentials.username, credentials.password)
+        const user = await authService.loginOnSingup(account)
         loggerService.info('User signup:', user)
 
         const loginToken = authService.getLoginToken(user)
@@ -49,4 +51,10 @@ export async function logout(req, res) {
     } catch (err) {
         res.status(400).send({ err: 'Failed to logout' })
     }
+}
+
+export async function validateUserByCookie(req, res) {
+    console.log("auth.controller - validateUserByCookie")
+    const user = await authService.validateUserByCookie(req, res)
+    res.json(user)
 }
