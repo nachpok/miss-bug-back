@@ -23,7 +23,6 @@ export const getBugs = async (req, res) => {
 }
 
 export const getBug = async (req, res) => {
-    console.log('visitedBugIds in get bug', req.cookies)
     const { bugId } = req.params
 
     if (!bugId) {
@@ -32,16 +31,17 @@ export const getBug = async (req, res) => {
     }
 
     try {
-        let visitedBugIds = req.cookies.visitedBugIds || []
-        if (!visitedBugIds.includes(bugId)) {
-            visitedBugIds.push(bugId)
-            res.cookie('visitedBugIds', visitedBugIds, { maxAge: 3 * 60 * 1000 })
-        }
+        // let visitedBugIds = req.cookies.visitedBugIds || []
+        // if (!visitedBugIds.includes(bugId)) {
+        //     visitedBugIds.push(bugId)
+        //     res.cookie('visitedBugIds', visitedBugIds, { maxAge: 3 * 60 * 1000 })
+        // }
 
-        if (visitedBugIds.length >= 3) {
-            res.status(403).send('You have visited 3 bugs in the last 3 hours. Please wait before visiting more bugs.')
-            return
-        }
+        // if (visitedBugIds.length >= 3) {
+        //     res.status(403).send('You have visited 3 bugs in the last 3 hours. Please wait before visiting more bugs.')
+        //     return
+        // }
+        console.log("getBug", bugId)
         const bug = await bugService.getById(bugId)
 
         res.send(bug)
@@ -67,15 +67,16 @@ export const removeBug = async (req, res) => {
 }
 
 export const addBug = async (req, res) => {
-    const { title, description, severity, labels } = req.body
-    if (!title || !description || !severity || !labels) {
+
+    const { title, description, severity, labels, creator } = req.body
+    if (!title || !description || !severity || !labels || !creator) {
         res.status(400).send('All fields are required')
         return
     }
-    const bug = { title, description, severity, labels, createdAt: new Date().toISOString() }
+    const bug = { title, description, severity, labels, createdAt: new Date().toISOString(), creator }
 
     try {
-        await bugService.addBug(bug)
+        await bugService.save(bug)
         res.send('Bug added')
     } catch (error) {
         res.status(404).send(error)

@@ -90,7 +90,7 @@ async function getById(bugId) {
     if (!bug) {
         throw new Error("Could not find bug with id: " + bugId)
     }
-    const bugLabels = bug.labelIds.map(labelId => labels.find(label => label.id === labelId))
+    const bugLabels = bug.labelIds?.map(labelId => labels.find(label => label.id === labelId)) || []
     bug.labels = bugLabels
     return bug
 }
@@ -111,6 +111,7 @@ async function remove(bugId) {
 }
 
 async function save(bug) {
+    console.log("bug.service - save", bug)
     if (bug._id) {
         const bugIdx = bugs.findIndex(b => b._id === bug._id)
         bugs[bugIdx] = bug

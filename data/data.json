@@ -18,7 +18,11 @@
       "_id": "OLDdun",
       "title": "Bug B",
       "description": "this is some description about nothing",
-      "severity": 44
+      "severity": 44,
+      "creator": {
+        "_id": "u101",
+        "fullName": "John Doe"
+      }
     },
     {
       "_id": "liugwe3",
@@ -94,6 +98,58 @@
         "label1",
         "label2"
       ]
+    },
+    {
+      "title": "test",
+      "description": "eee",
+      "severity": 3,
+      "labels": [],
+      "createdAt": "2024-08-04T12:46:52.784Z",
+      "_id": "UlApqZ"
+    },
+    {
+      "title": "titltttt",
+      "description": "fdfd",
+      "severity": 2,
+      "labels": [],
+      "createdAt": "2024-08-04T12:47:21.639Z",
+      "_id": "JaPfUe"
+    },
+    {
+      "title": "with ouner",
+      "description": "fds",
+      "severity": 3,
+      "labels": [],
+      "createdAt": "2024-08-04T12:47:57.896Z",
+      "_id": "ov6poF"
+    },
+    {
+      "title": "test 4",
+      "description": "dfs",
+      "severity": 3,
+      "labels": [],
+      "createdAt": "2024-08-04T13:07:34.392Z",
+      "_id": "g8086Q"
+    },
+    {
+      "title": "test99",
+      "description": "333",
+      "severity": 4,
+      "labels": [],
+      "createdAt": "2024-08-04T13:13:29.958Z",
+      "_id": "GbH7sK"
+    },
+    {
+      "title": "dfsfsdfsdfds",
+      "description": "fsdf",
+      "severity": 44,
+      "labels": [],
+      "createdAt": "2024-08-04T13:15:19.443Z",
+      "creator": {
+        "_id": "1JgJK0",
+        "fullname": "nate poky"
+      },
+      "_id": "Odc609"
     }
   ],
   "labels": [
