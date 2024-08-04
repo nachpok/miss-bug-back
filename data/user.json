@@ -1,26 +1,36 @@
 [
   {
-    "_id": "u101",
-    "fullName": "John Doe II",
-    "username": "john.doe",
-    "email": "john.doe@example.com",
-    "password": "password123",
-    "role": "admin",
-    "score": 100
+    "username": "admin",
+    "password": "$2b$10$zQOQxM5LV0F5lLOSLog8KOzBqFfYyUZBLfjb//Vaqt/gByati9t6a",
+    "fullname": "admin",
+    "_id": "1ArgK0",
+    "role": "admin"
   },
   {
     "_id": "u102",
-    "fullName": "Jane Doe",
+    "fullname": "Jane Doe",
     "username": "jane.doe",
     "email": "jane.doe@example.com",
-    "password": "password123",
+    "password": "$2b$10$zQOQxM5LV0F5lLOSLog8KOzBqFfYyUZBLfjb//Vaqt/gByati9t6a",
     "role": "user",
     "score": 54
   },
   {
-    "username": "nate",
+    "_id": "u101",
+    "fullname": "John Doe",
+    "username": "john.doe",
+    "email": "john.doe@example.com",
     "password": "$2b$10$zQOQxM5LV0F5lLOSLog8KOzBqFfYyUZBLfjb//Vaqt/gByati9t6a",
-    "fullname": "nate poky",
-    "_id": "1JgJK0"
+    "role": "user",
+    "score": 54
+  },
+  {
+    "_id": "u103",
+    "fullname": "Jim Doe",
+    "username": "jim.doe",
+    "email": "jim.doe@example.com",
+    "password": "$2b$10$zQOQxM5LV0F5lLOSLog8KOzBqFfYyUZBLfjb//Vaqt/gByati9t6a",
+    "role": "user",
+    "score": 54
   }
 ]

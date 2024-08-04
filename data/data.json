@@ -10,7 +10,7 @@
         "label1"
       ],
       "creator": {
-        "_id": "u101",
+        "_id": "u102",
         "fullName": "John Doe"
       }
     },
@@ -20,7 +20,7 @@
       "description": "this is some description about nothing",
       "severity": 44,
       "creator": {
-        "_id": "u101",
+        "_id": "u102",
         "fullName": "John Doe"
       }
     },
@@ -63,7 +63,7 @@
         "label2"
       ],
       "creator": {
-        "_id": "u105",
+        "_id": "u104",
         "fullName": "John Doe"
       }
     },
@@ -140,44 +140,13 @@
       "_id": "GbH7sK"
     },
     {
-      "title": "dfsfsdfsdfds",
-      "description": "fsdf",
-      "severity": 44,
-      "labels": [],
+      "title": "Bug xxxxxx",
       "createdAt": "2024-08-04T13:15:19.443Z",
       "creator": {
         "_id": "1JgJK0",
         "fullname": "nate poky"
       },
       "_id": "Odc609"
-    },
-    {
-      "title": "Bug Z",
-      "description": "this is some description about nothing",
-      "severity": 2,
-      "labels": [
-        "label1"
-      ],
-      "createdAt": "2024-08-04T14:07:16.860Z",
-      "creator": {
-        "_id": "u101",
-        "fullName": "John Doe"
-      },
-      "_id": "tpacv4"
-    },
-    {
-      "title": "Bug Z",
-      "description": "this is some description about nothing",
-      "severity": 2,
-      "labels": [
-        "label1"
-      ],
-      "createdAt": "2024-08-04T14:09:51.844Z",
-      "creator": {
-        "_id": "u101",
-        "fullName": "John Doe"
-      },
-      "_id": "QsPYGW"
     }
   ],
   "labels": [

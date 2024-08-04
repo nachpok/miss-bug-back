@@ -79,9 +79,7 @@ async function query(filterBy) {
         if (filterBy?.creator) {
             bugsToReturn = bugsToReturn.filter(bug => bug?.creator?._id === filterBy.creator)
         }
-        console.log("Tocoooooooo")
 
-        console.log("bugsToReturn", bugsToReturn)
 
         const data = {
             bugs: bugsToReturn,
@@ -98,6 +96,7 @@ async function query(filterBy) {
 
 async function getById(bugId) {
     const bug = bugs.find(bug => bug._id === bugId)
+    console.log("bug.service - getById", bug)
     if (!bug) {
         throw new Error("Could not find bug with id: " + bugId)
     }
@@ -125,7 +124,8 @@ async function save(bug) {
     console.log("bug.service - save", bug)
     if (bug._id) {
         const bugIdx = bugs.findIndex(b => b._id === bug._id)
-        bugs[bugIdx] = bug
+        bugs[bugIdx] = { ...bugs[bugIdx], ...bug }
+        console.log("bugs[bugIdx]", bugs[bugIdx])
     } else {
         bug._id = makeId()
         bugs.push(bug)

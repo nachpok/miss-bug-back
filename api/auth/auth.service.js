@@ -59,6 +59,7 @@ function _getMiniUser(user) {
     return {
         _id: user._id,
         fullname: user.fullname,
+        role: user.role
     }
 }
 
@@ -90,5 +91,5 @@ async function signup({ username, password, fullname }) {
     if (userExist) return { error: 'Username already taken' };
 
     const hash = await bcrypt.hash(password, saltRounds)
-    return userService.save({ username, password: hash, fullname })
+    return userService.save({ username, password: hash, fullname, role: 'user' })
 }

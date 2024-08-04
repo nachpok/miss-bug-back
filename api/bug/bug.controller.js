@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import { bugService } from './bug.service.js'
 import { getCountOfVisitedBugs } from '../../services/util.service.js'
-
+import { userService } from '../user/user.service.js'
 export const getBugs = async (req, res) => {
     const { title, severity, createdAt, sortBy, isPaginated, page, labels, creator } = req.query
     const filterBy = {}
@@ -61,7 +61,7 @@ export const removeBug = async (req, res) => {
 
     try {
         const bug = await bugService.getById(bugId)
-        if (req.loggedinUser._id !== bug.creator._id) {
+        if (req.loggedinUser._id !== bug.creator._id && req.loggedinUser.role !== 'admin') {
             res.status(403).send(`User does not match creator`)
             return
         }
@@ -101,13 +101,21 @@ export const updateBug = async (req, res) => {
         res.status(400).send('Bug ID is required')
         return
     }
-
-
-
     try {
-
         const bug = await bugService.getById(_id)
-        if (req.loggedinUser._id !== bug.creator._id) {
+
+        if (!bug) {
+            res.status(404).send('Bug not found')
+            return
+        }
+        const user = await userService.getById(req.loggedinUser._id)
+
+        if (!user) {
+            res.status(404).send('User not found')
+            return
+        }
+
+        if (req.loggedinUser._id !== bug.creator._id && user.role !== 'admin') {
             res.status(403).send(`User does not match creator`)
             return
         }
