@@ -33,6 +33,7 @@ export const bugService = {
 }
 
 async function query(filterBy) {
+    console.log("bug.service - query", filterBy)
     let bugsToReturn = bugs
     try {
         if (filterBy?.title) {
@@ -52,6 +53,7 @@ async function query(filterBy) {
                 return bug.labelIds?.some(labelId => filterBy.labels.includes(labelId))
             })
         }
+
         if (filterBy?.sortBy) {
             switch (filterBy.sortBy) {
                 case 'severity':
@@ -67,11 +69,20 @@ async function query(filterBy) {
                     bugsToReturn = bugsToReturn.sort((a, b) => dayjs(a[filterBy.sortBy]).isAfter(dayjs(b[filterBy.sortBy])) ? 1 : -1)
             }
         }
+
         if (filterBy?.isPaginated === 'true' && filterBy?.page) {
             const page = parseInt(filterBy.page)
             const bugsToSlice = bugsToReturn.slice((page - 1) * BUGS_PER_PAGE, page * BUGS_PER_PAGE)
             bugsToReturn = bugsToSlice
         }
+
+        if (filterBy?.creator) {
+            bugsToReturn = bugsToReturn.filter(bug => bug?.creator?._id === filterBy.creator)
+        }
+        console.log("Tocoooooooo")
+
+        console.log("bugsToReturn", bugsToReturn)
+
         const data = {
             bugs: bugsToReturn,
             totalBugs: bugs?.length,
@@ -134,7 +145,6 @@ function _saveBugsToFile(path = "data/data.json") {
     };
     writeJsonFile(path, dataToSave);
 }
-///Users/nach/Documents/GitHub/miss-bug-back/data/data.json
 
 function _saveBugsDefaultBugsToFile() {
     const defaultBugs = readJsonFile("data/defaultData.json")

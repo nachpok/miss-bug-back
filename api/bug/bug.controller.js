@@ -3,7 +3,7 @@ import { bugService } from './bug.service.js'
 import { getCountOfVisitedBugs } from '../../services/util.service.js'
 
 export const getBugs = async (req, res) => {
-    const { title, severity, createdAt, sortBy, isPaginated, page, labels } = req.query
+    const { title, severity, createdAt, sortBy, isPaginated, page, labels, creator } = req.query
     const filterBy = {}
 
     if (title && title.trim() !== '') filterBy.title = title
@@ -13,7 +13,8 @@ export const getBugs = async (req, res) => {
     if (isPaginated && isPaginated.trim() !== '') filterBy.isPaginated = isPaginated
     if (page && page.trim() !== '') filterBy.page = page
     if (labels) filterBy.labels = labels
-
+    if (creator) filterBy.creator = creator
+    console.log("getBugs", filterBy)
     try {
         const bugs = await bugService.query(filterBy)
         res.send(bugs)
@@ -59,6 +60,11 @@ export const removeBug = async (req, res) => {
     }
 
     try {
+        const bug = await bugService.getById(bugId)
+        if (req.loggedinUser._id !== bug.creator._id) {
+            res.status(403).send(`User does not match creator`)
+            return
+        }
         await bugService.remove(bugId)
         res.send('Bug removed')
     } catch (error) {
@@ -75,6 +81,11 @@ export const addBug = async (req, res) => {
     }
     const bug = { title, description, severity, labels, createdAt: new Date().toISOString(), creator }
 
+    if (req.loggedinUser._id !== creator._id) {
+        res.status(403).send(`User does not match creator`)
+        return
+    }
+
     try {
         await bugService.save(bug)
         res.send('Bug added')
@@ -90,7 +101,16 @@ export const updateBug = async (req, res) => {
         res.status(400).send('Bug ID is required')
         return
     }
+
+
+
     try {
+
+        const bug = await bugService.getById(_id)
+        if (req.loggedinUser._id !== bug.creator._id) {
+            res.status(403).send(`User does not match creator`)
+            return
+        }
         await bugService.save({ _id, title, description, severity, labels })
         res.send('Bug updated')
     } catch (error) {

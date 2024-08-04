@@ -150,6 +150,34 @@
         "fullname": "nate poky"
       },
       "_id": "Odc609"
+    },
+    {
+      "title": "Bug Z",
+      "description": "this is some description about nothing",
+      "severity": 2,
+      "labels": [
+        "label1"
+      ],
+      "createdAt": "2024-08-04T14:07:16.860Z",
+      "creator": {
+        "_id": "u101",
+        "fullName": "John Doe"
+      },
+      "_id": "tpacv4"
+    },
+    {
+      "title": "Bug Z",
+      "description": "this is some description about nothing",
+      "severity": 2,
+      "labels": [
+        "label1"
+      ],
+      "createdAt": "2024-08-04T14:09:51.844Z",
+      "creator": {
+        "_id": "u101",
+        "fullName": "John Doe"
+      },
+      "_id": "QsPYGW"
     }
   ],
   "labels": [

@@ -429,3 +429,66 @@
 4.8.2024, 16:18:15 - INFO - Visited route | /
 4.8.2024, 16:18:17 - INFO - Visited route | /
 4.8.2024, 16:18:20 - INFO - Visited route | /:bugId
+4.8.2024, 16:25:14 - INFO - Visited route | /
+4.8.2024, 16:25:16 - INFO - Visited route | /
+4.8.2024, 16:26:03 - INFO - Visited route | /
+4.8.2024, 16:26:13 - INFO - Visited route | /
+4.8.2024, 16:27:32 - INFO - Visited route | /
+4.8.2024, 16:27:32 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:27:50 - INFO - Visited route | /
+4.8.2024, 16:27:50 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:27:52 - INFO - Visited route | /
+4.8.2024, 16:27:52 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:28:06 - INFO - Visited route | /
+4.8.2024, 16:28:06 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:28:08 - INFO - Visited route | /
+4.8.2024, 16:28:08 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:28:14 - INFO - Visited route | /
+4.8.2024, 16:28:14 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:28:51 - INFO - Visited route | /
+4.8.2024, 16:28:51 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:29:25 - INFO - Visited route | /
+4.8.2024, 16:29:25 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:29:27 - INFO - Visited route | /
+4.8.2024, 16:29:27 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:29:59 - INFO - Visited route | /
+4.8.2024, 16:29:59 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:30:27 - INFO - Visited route | /
+4.8.2024, 16:30:27 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:30:41 - INFO - Visited route | /
+4.8.2024, 16:30:41 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:30:43 - INFO - Visited route | /
+4.8.2024, 16:30:43 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:31:09 - INFO - Visited route | /
+4.8.2024, 16:31:09 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:31:44 - INFO - Visited route | /
+4.8.2024, 16:31:44 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:31:50 - INFO - Visited route | /
+4.8.2024, 16:31:50 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:32:01 - INFO - Visited route | /
+4.8.2024, 16:32:01 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:32:09 - INFO - Visited route | /
+4.8.2024, 16:32:09 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:32:16 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+4.8.2024, 16:32:16 - INFO - Visited route | /
+4.8.2024, 16:32:34 - INFO - Visited route | /
+4.8.2024, 16:33:10 - INFO - Visited route | /
+4.8.2024, 16:33:14 - INFO - Visited route | /
+4.8.2024, 16:33:20 - INFO - Visited route | /
+4.8.2024, 17:06:47 - INFO - Visited route | /
+4.8.2024, 17:07:16 - INFO - Visited route | /
+4.8.2024, 17:07:34 - INFO - Visited route | /
+4.8.2024, 17:07:34 - INFO - Visited route | /
+4.8.2024, 17:07:36 - INFO - Visited route | /
+4.8.2024, 17:07:36 - INFO - Visited route | /
+4.8.2024, 17:09:36 - INFO - Visited route | /
+4.8.2024, 17:09:44 - INFO - User login:  | {"_id":"1JgJK0","fullname":"nate poky"}
+4.8.2024, 17:09:51 - INFO - Visited route | /
+4.8.2024, 17:14:34 - INFO - Visited route | /
+4.8.2024, 17:15:09 - INFO - Visited route | /
+4.8.2024, 17:15:28 - INFO - Visited route | /
+4.8.2024, 17:15:42 - INFO - Visited route | /
+4.8.2024, 17:15:58 - INFO - Visited route | /
+4.8.2024, 17:17:49 - INFO - Visited route | /:bugId
+4.8.2024, 17:18:02 - INFO - Visited route | /:bugId
+4.8.2024, 17:21:45 - INFO - Visited route | /:bugId
