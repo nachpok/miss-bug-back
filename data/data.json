@@ -138,15 +138,6 @@
       "labels": [],
       "createdAt": "2024-08-04T13:13:29.958Z",
       "_id": "GbH7sK"
-    },
-    {
-      "title": "Bug xxxxxx",
-      "createdAt": "2024-08-04T13:15:19.443Z",
-      "creator": {
-        "_id": "1JgJK0",
-        "fullname": "nate poky"
-      },
-      "_id": "Odc609"
     }
   ],
   "labels": [

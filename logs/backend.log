@@ -557,3 +557,16 @@
 4.8.2024, 22:07:16 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
 4.8.2024, 22:45:02 - INFO - Visited route | /
 4.8.2024, 22:45:09 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+4.8.2024, 23:05:33 - INFO - Visited route | /
+4.8.2024, 23:05:33 - INFO - Visited route | /
+4.8.2024, 23:05:35 - INFO - Visited route | /
+4.8.2024, 23:05:35 - INFO - Visited route | /
+4.8.2024, 23:05:44 - INFO - Visited route | /
+4.8.2024, 23:05:44 - INFO - Visited route | /
+4.8.2024, 23:06:36 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+4.8.2024, 23:06:36 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+4.8.2024, 23:06:40 - INFO - Visited route | /
+4.8.2024, 23:06:40 - INFO - Visited route | /
+4.8.2024, 23:06:45 - INFO - Visited route | /:bugId
+4.8.2024, 23:06:47 - INFO - Visited route | /
+4.8.2024, 23:06:47 - INFO - Visited route | /
