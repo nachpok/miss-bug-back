@@ -2,10 +2,15 @@ import express from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import path from 'path'
+import { fileURLToPath } from 'url'
+
 import { bugRoutes } from './api/bug/bug.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
 const app = express();
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const corsOptions = {
     origin: [
@@ -23,16 +28,13 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(cookieParser())
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')))
 app.use('/api/bug', bugRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
 
-app.get('/api/visit-count', (req, res) => {
-    let visitCount = req.cookies.visitCount || 0
-    visitCount++
-    res.cookie('visitCount', visitCount)
-    res.send(`You have visited this page ${visitCount} times.`)
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
 

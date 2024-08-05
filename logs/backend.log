@@ -754,3 +754,4 @@
 5.8.2024, 10:51:56 - DEBUG - auth.route - new account created: {"username":"admin343","password":"$2b$10$VWvDaKU.7hDPN2dEDTXP2ukaS9xEbumfioDph7ee2d2QrZIAH6Q4O","fullname":"ddd","role":"user","_id":"6vrQbr"}
 5.8.2024, 10:52:26 - DEBUG - auth.service - signup with username: admin343, fullname: ddd
 5.8.2024, 11:06:19 - INFO - Visited route | /
+5.8.2024, 11:27:23 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
