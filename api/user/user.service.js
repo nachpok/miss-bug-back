@@ -40,7 +40,9 @@ function reset() {
     data = readJsonFile("data/defaultUser.json")
     _saveUserToFile()
 }
-function getByUsername(username) {
+
+async function getByUsername(username) {
+    data = await readJsonFile("data/user.json")
     const user = data.find(user => user.username === username)
     return user
 }

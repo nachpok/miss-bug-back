@@ -35,13 +35,20 @@ function validateToken(token) {
 async function login(username, password) {
     console.log("auth.service - login")
     try {
-        var user = await userService.getByUsername(username)
-        if (!user) throw 'Unkown username'
+        const user = await userService.getByUsername(username)
+        console.log('login user', user)
+        if (!user) {
+            throw new Error('Unkown username')
+        }
 
         const match = await bcrypt.compare(password, user.password)
-        if (!match) throw 'Invalid username or password'
+        console.log('login match', match)
+        if (!match) {
+            throw new Error('Invalid username or password')
+        }
 
         const miniUser = _getMiniUser(user)
+        console.log('login miniUser', miniUser)
         return miniUser
     } catch (err) {
         console.log('auth.service - Invalid login token')

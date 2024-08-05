@@ -32,5 +32,110 @@
     "password": "$2b$10$zQOQxM5LV0F5lLOSLog8KOzBqFfYyUZBLfjb//Vaqt/gByati9t6a",
     "role": "user",
     "score": 54
+  },
+  {
+    "username": "test1",
+    "password": "$2b$10$dGahLm1b3pgF2saDO8h7NOVdu5W/X3xBFilLtj8KUjVb/5lbiAUca",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "xPD2n8"
+  },
+  {
+    "username": "test3",
+    "password": "$2b$10$Q3qtGNYk6o.Sz/HzoR1B9um8HHJklT2X8JR5ekAvJqAyNw0RUO2jS",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "BjqTU9"
+  },
+  {
+    "username": "test4",
+    "password": "$2b$10$olfFi4Ax4BbS2nX0.hztdOwdrwTUqbI0AwvTnVb1zfMZMozFSF0Ii",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "ZYryTD"
+  },
+  {
+    "username": "tess",
+    "password": "$2b$10$xxXAVGaMpgHnQ1SSU9nDmORu4R9nulFv3p1UDzN0IiGlpRWpkx.KO",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "DS6BWI"
+  },
+  {
+    "username": "tess1",
+    "password": "$2b$10$epGnVWaaCKuqzjQ3TvJadOWJzJ0sVXVKo1c1jnCGkKd7O7DSUMLiy",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "EMsJd4"
+  },
+  {
+    "username": "tess2",
+    "password": "$2b$10$Q4dw6MOnh2qqUnrZlmzhNujveWB33HXwMlyLN4yPEdCchKYzpCTZu",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "Bek3ri"
+  },
+  {
+    "username": "tess3",
+    "password": "$2b$10$azR2pp8wtncPB/IvnB9Luu33DJQhZLmYznIICiP2wEd/8SgU7mArO",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "UBOjLU"
+  },
+  {
+    "username": "adminddd",
+    "password": "$2b$10$NqChh/Ca6u7KFLyMAwaun.Las/BpjJbaVCFKiZSSiFahuwJwC8E.i",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "K1tBee"
+  },
+  {
+    "username": "test99",
+    "password": "$2b$10$q1DnMyn2jQ6PObDCoIy2J.G9JVdxLgs8QQwpGHiwRvpOL9Szsb4Wa",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "TjtR5o"
+  },
+  {
+    "username": "admin4545454",
+    "password": "$2b$10$X5ESD18fOZlZI02rQmHm1Oe.KpqrlrX9347cn2hyFyo7NbDXQW3YW",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "QjmXqz"
+  },
+  {
+    "username": "admin4545222",
+    "password": "$2b$10$oSv0UJN6F.jal8oln3oE.e5if/G9eFiKCEEt6JAp0uw.sA8Ql4FSy",
+    "fullname": "נחליאל פוקרוי",
+    "role": "user",
+    "_id": "xnSxcc"
+  },
+  {
+    "username": "admin333333",
+    "password": "$2b$10$6ylXrfT7x6/IOeCskCA5..CHcPb6JrpGs7e9rDMLdqgMP6RBfK.Qa",
+    "fullname": "dfd",
+    "role": "user",
+    "_id": "o6lF5I"
+  },
+  {
+    "username": "admin333333ddd",
+    "password": "$2b$10$U0hCRyB9eVSp93IImb.FBOPhTP3//KH/FT2MJ8JU/4NNZKuD3P4uS",
+    "fullname": "dfd",
+    "role": "user",
+    "_id": "WvODpP"
+  },
+  {
+    "username": "admin333333dddd",
+    "password": "$2b$10$St6uSMRsQI3QGUjsc9m6KesksH0eMbDUwBd52jGwWhqFpLG0Wxwky",
+    "fullname": "dfd",
+    "role": "user",
+    "_id": "GGlAVz"
+  },
+  {
+    "username": "admin343",
+    "password": "$2b$10$VWvDaKU.7hDPN2dEDTXP2ukaS9xEbumfioDph7ee2d2QrZIAH6Q4O",
+    "fullname": "ddd",
+    "role": "user",
+    "_id": "6vrQbr"
   }
 ]

@@ -22,21 +22,31 @@ export async function login(req, res) {
 export async function signup(req, res) {
     console.log("auth.controller - signup")
     try {
+
         const credentials = req.body
         const account = await authService.signup(credentials)
-
+        console.log('account', account)
         if (account?.error) {
             return res.status(409).send({ err: account.error })
         }
+        console.log('account NO ERROR, credentials', credentials)
         loggerService.debug(`auth.route - new account created: ` + JSON.stringify(account))
 
-        const user = await authService.loginOnSingup(account)
+        const username = credentials.username
+        const password = credentials.password
+        const user = await authService.login(username, password)
         loggerService.info('User signup:', user)
 
         const loginToken = authService.getLoginToken(user)
         res.cookie('loginToken', loginToken, { sameSite: 'None', secure: true })
-
-        res.json(user)
+        const miniUser = {
+            _id: user._id,
+            fullname: user.fullname,
+            role: user.role
+        }
+        console.log('miniUser', miniUser)
+        res.status(201).json(miniUser)
+        return
     } catch (err) {
         loggerService.error('Failed to signup ' + err)
         res.status(400).send({ err: 'Failed to signup' })

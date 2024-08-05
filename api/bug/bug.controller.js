@@ -52,6 +52,7 @@ export const getBug = async (req, res) => {
 }
 
 export const removeBug = async (req, res) => {
+    console.log('controller removeBug', req.params)
     const { bugId } = req.params
 
     if (!bugId) {
@@ -61,7 +62,10 @@ export const removeBug = async (req, res) => {
 
     try {
         const bug = await bugService.getById(bugId)
-        if (req.loggedinUser._id !== bug.creator._id && req.loggedinUser.role !== 'admin') {
+        const isCreator = req.loggedinUser._id === bug?.creator?._id
+        const user = await userService.getById(req.loggedinUser._id)
+        const isAdmin = user.role === 'admin'
+        if (!isCreator && !isAdmin) {
             res.status(403).send(`User does not match creator`)
             return
         }

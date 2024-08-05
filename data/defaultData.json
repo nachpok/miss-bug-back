@@ -10,22 +10,18 @@
                 "label1"
             ],
             "creator": {
-                "_id": "u101",
+                "_id": "u102",
                 "fullName": "John Doe"
             }
         },
         {
             "_id": "OLDdun",
             "title": "Bug B",
-            "severity": 5,
             "description": "this is some description about nothing",
-            "createdAt": "2024-02-21T12:00:00.000Z",
-            "labelIds": [
-                "label2"
-            ],
+            "severity": 44,
             "creator": {
                 "_id": "u102",
-                "fullName": "Jane Doe"
+                "fullName": "John Doe"
             }
         },
         {
@@ -67,7 +63,7 @@
                 "label2"
             ],
             "creator": {
-                "_id": "u105",
+                "_id": "u104",
                 "fullName": "John Doe"
             }
         },
@@ -80,7 +76,11 @@
             "labelIds": [
                 "label1",
                 "label2"
-            ]
+            ],
+            "creator": {
+                "_id": "u102",
+                "fullName": "John Doe"
+            }
         },
         {
             "_id": "POPedt",
@@ -90,18 +90,11 @@
             "createdAt": "2024-02-20T12:00:00.000Z",
             "labelIds": [
                 "label2"
-            ]
-        },
-        {
-            "_id": "cxvxcv",
-            "title": "Bug H",
-            "severity": 5,
-            "description": "this is some description about nothing",
-            "createdAt": "2024-02-21T12:00:00.000Z",
-            "labelIds": [
-                "label1",
-                "label2"
-            ]
+            ],
+            "creator": {
+                "_id": "u102",
+                "fullName": "John Doe"
+            }
         }
     ],
     "labels": [

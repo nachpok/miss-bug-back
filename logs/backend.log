@@ -570,3 +570,186 @@
 4.8.2024, 23:06:45 - INFO - Visited route | /:bugId
 4.8.2024, 23:06:47 - INFO - Visited route | /
 4.8.2024, 23:06:47 - INFO - Visited route | /
+5.8.2024, 9:27:06 - INFO - Visited route | /
+5.8.2024, 9:27:06 - INFO - Visited route | /
+5.8.2024, 9:27:11 - INFO - Visited route | /:bugId
+5.8.2024, 9:28:00 - INFO - Visited route | /
+5.8.2024, 9:28:00 - INFO - Visited route | /
+5.8.2024, 9:28:25 - INFO - Visited route | /:bugId
+5.8.2024, 9:28:47 - INFO - Visited route | /
+5.8.2024, 9:28:47 - INFO - Visited route | /
+5.8.2024, 9:28:50 - INFO - Visited route | /
+5.8.2024, 9:28:50 - INFO - Visited route | /
+5.8.2024, 9:29:02 - INFO - Visited route | /
+5.8.2024, 9:29:02 - INFO - Visited route | /
+5.8.2024, 9:30:06 - INFO - Visited route | /
+5.8.2024, 9:30:06 - INFO - Visited route | /
+5.8.2024, 9:30:40 - INFO - Visited route | /
+5.8.2024, 9:30:40 - INFO - Visited route | /
+5.8.2024, 9:31:04 - INFO - Visited route | /
+5.8.2024, 9:31:04 - INFO - Visited route | /
+5.8.2024, 9:31:08 - INFO - Visited route | /
+5.8.2024, 9:31:08 - INFO - Visited route | /
+5.8.2024, 9:31:37 - INFO - Visited route | /
+5.8.2024, 9:31:37 - INFO - Visited route | /
+5.8.2024, 9:31:40 - INFO - Visited route | /
+5.8.2024, 9:31:40 - INFO - Visited route | /
+5.8.2024, 9:31:47 - INFO - Visited route | /
+5.8.2024, 9:31:47 - INFO - Visited route | /
+5.8.2024, 9:31:50 - INFO - Visited route | /
+5.8.2024, 9:31:50 - INFO - Visited route | /
+5.8.2024, 9:31:57 - INFO - Visited route | /
+5.8.2024, 9:31:57 - INFO - Visited route | /
+5.8.2024, 9:32:17 - INFO - Visited route | /
+5.8.2024, 9:32:17 - INFO - Visited route | /
+5.8.2024, 9:32:22 - INFO - Visited route | /:bugId
+5.8.2024, 9:33:07 - INFO - Visited route | /:bugId
+5.8.2024, 9:33:12 - INFO - Visited route | /
+5.8.2024, 9:33:12 - INFO - Visited route | /
+5.8.2024, 9:33:13 - INFO - Visited route | /
+5.8.2024, 9:33:13 - INFO - Visited route | /
+5.8.2024, 9:33:39 - INFO - Visited route | /:bugId
+5.8.2024, 9:34:34 - INFO - Visited route | /:bugId
+5.8.2024, 9:35:20 - INFO - Visited route | /:bugId
+5.8.2024, 9:36:58 - INFO - Visited route | /:bugId
+5.8.2024, 9:37:12 - INFO - Visited route | /:bugId
+5.8.2024, 9:37:23 - INFO - Visited route | /:bugId
+5.8.2024, 9:38:59 - INFO - Visited route | /:bugId
+5.8.2024, 9:39:23 - INFO - Visited route | /:bugId
+5.8.2024, 9:40:09 - INFO - Visited route | /:bugId
+5.8.2024, 9:40:33 - INFO - Visited route | /:bugId
+5.8.2024, 9:41:20 - INFO - Visited route | /:bugId
+5.8.2024, 9:42:07 - INFO - Visited route | /:bugId
+5.8.2024, 9:42:19 - INFO - Visited route | /:bugId
+5.8.2024, 9:44:23 - INFO - Visited route | /
+5.8.2024, 9:44:23 - INFO - Visited route | /
+5.8.2024, 9:44:27 - INFO - Visited route | /:bugId
+5.8.2024, 9:44:31 - INFO - Visited route | /
+5.8.2024, 9:44:31 - INFO - Visited route | /
+5.8.2024, 9:44:45 - INFO - Visited route | /
+5.8.2024, 9:44:45 - INFO - Visited route | /
+5.8.2024, 9:46:09 - DEBUG - auth.service - signup with username: to remove, fullname: נחליאל פוקרוי
+5.8.2024, 9:46:09 - DEBUG - auth.route - new account created: {"username":"to remove","password":"$2b$10$Lc1uL474wGUb3X.dQRxSL.pIlBDeKXlZ4iAKMSHyPNMdlpx3vPl/m","fullname":"נחליאל פוקרוי","role":"user","_id":"HdGpSh"}
+5.8.2024, 9:46:09 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:46:18 - DEBUG - auth.service - signup with username: to remove, fullname: bal bla
+5.8.2024, 9:46:58 - INFO - User login:  | {"_id":"HdGpSh","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 9:47:08 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+5.8.2024, 9:47:53 - DEBUG - auth.service - signup with username: test, fullname: נחליאל פוקרוי
+5.8.2024, 9:47:53 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$tVVrnj7q8s1BihbYRQtAauedS0TIkqA5rui9Rx/SsPzSs4CDVM7LO","fullname":"נחליאל פוקרוי","role":"user","_id":"5mEqcL"}
+5.8.2024, 9:47:53 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:48:14 - INFO - User login:  | {"_id":"5mEqcL","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 9:49:24 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+5.8.2024, 9:49:38 - DEBUG - auth.service - signup with username: test, fullname: נחליאל פוקרוי
+5.8.2024, 9:49:38 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$13Jvpj9JBTrE1IexbfTmHeFou8JkZepok4sc0mgXp/bkjg69Orqqe","fullname":"נחליאל פוקרוי","role":"user","_id":"VfuFEo"}
+5.8.2024, 9:49:38 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:51:02 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+5.8.2024, 9:51:15 - DEBUG - auth.service - signup with username: test, fullname: נחליאל פוקרוי
+5.8.2024, 9:51:15 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$hPtpqQkMnMGLIZcmIwyvy.qBswvEqyXLB9VL18FGvZuZtkksFMEhW","fullname":"נחליאל פוקרוי","role":"user","_id":"5V4CeG"}
+5.8.2024, 9:51:15 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:52:12 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+5.8.2024, 9:52:22 - DEBUG - auth.service - signup with username: test, fullname: נחליאל פוקרוי
+5.8.2024, 9:52:22 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$OwpByLvixsyUzU.Sj2lQkOpfvsJJwGcLXw5IwE5XEIFySI69avnpy","fullname":"נחליאל פוקרוי","role":"user","_id":"EcG7KG"}
+5.8.2024, 9:52:22 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:53:21 - DEBUG - auth.service - signup with username: nate1, fullname: nate poky
+5.8.2024, 9:53:21 - DEBUG - auth.route - new account created: {"username":"nate1","password":"$2b$10$4JLGCWwMp.jQFOPFSu8gyO62bsHX0cChCuZskjU.z4Enw45skKO2S","fullname":"nate poky","role":"user","_id":"QoIEZ0"}
+5.8.2024, 9:53:21 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:54:30 - DEBUG - auth.service - signup with username: nate2, fullname: nate poky
+5.8.2024, 9:54:30 - DEBUG - auth.route - new account created: {"username":"nate2","password":"$2b$10$E1XkX4sPWaHMYtKOGU1Dke66jF8JHHA1Wdk4ZB42tuAZuhngv9g86","fullname":"nate poky","role":"user","_id":"cFTCCO"}
+5.8.2024, 9:54:30 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:55:18 - DEBUG - auth.service - signup with username: nate3, fullname: nate poky
+5.8.2024, 9:55:18 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 9:55:18 - DEBUG - auth.route - new account created: {"username":"nate3","password":"$2b$10$qAwzyclaILMX.8RV7RKs7unJPuXOTRm5BcurRTX/2s8Q2ZBTZ87D6","fullname":"nate poky","role":"user","_id":"wsEa3g"}
+5.8.2024, 9:55:53 - DEBUG - auth.service - signup with username: nate3, fullname: nate poky
+5.8.2024, 10:14:55 - DEBUG - auth.service - signup with username: test4, fullname: נחליאל פוקרוי
+5.8.2024, 10:14:55 - DEBUG - auth.route - new account created: {"username":"test4","password":"$2b$10$RsPGerCw01qupUgvsnuQX.TRJsAfiG7QrIS8.PwEDz7FzI50i1I/W","fullname":"נחליאל פוקרוי","role":"user","_id":"m99HHx"}
+5.8.2024, 10:14:55 - ERROR - Failed to signup TypeError: authService.loginOnSingup is not a function
+5.8.2024, 10:16:09 - DEBUG - auth.service - signup with username: test5, fullname: נחליאל פוקרוי
+5.8.2024, 10:16:09 - DEBUG - auth.route - new account created: {"username":"test5","password":"$2b$10$.8E7jPvZvrmjhBwOcIXSDeTJOuXpNn5NYIZNGwLGWzmMXgEKZYBJO","fullname":"נחליאל פוקרוי","role":"user","_id":"mdrYbV"}
+5.8.2024, 10:16:09 - INFO - User signup: | null
+5.8.2024, 10:18:05 - DEBUG - auth.service - signup with username: test6, fullname: נחליאל פוקרוי
+5.8.2024, 10:18:05 - DEBUG - auth.route - new account created: {"username":"test6","password":"$2b$10$XX3c21AXqbj.hKR9P1nh5.RF5FQWkekWuLtSdrJawLtX17.u/EzvK","fullname":"נחליאל פוקרוי","role":"user","_id":"hXF3HI"}
+5.8.2024, 10:18:05 - INFO - User signup: | null
+5.8.2024, 10:18:05 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:20:02 - DEBUG - auth.service - signup with username: test7, fullname: נחליאל פוקרוי
+5.8.2024, 10:20:02 - ERROR - Failed to signup ReferenceError: user is not defined
+5.8.2024, 10:21:08 - DEBUG - auth.service - signup with username: test8, fullname: נחליאל פוקרוי
+5.8.2024, 10:21:08 - ERROR - Failed to signup ReferenceError: user is not defined
+5.8.2024, 10:22:58 - INFO - User login:  | {"_id":"xWritw","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:23:29 - DEBUG - auth.service - signup with username: test9, fullname: נחליאל פוקרוי
+5.8.2024, 10:23:29 - ERROR - Failed to signup ReferenceError: user is not defined
+5.8.2024, 10:24:10 - DEBUG - auth.service - signup with username: test1, fullname: נחליאל פוקרוי
+5.8.2024, 10:24:10 - ERROR - Failed to signup ReferenceError: user is not defined
+5.8.2024, 10:27:50 - DEBUG - auth.service - signup with username: test2, fullname: נחליאל פוקרוי
+5.8.2024, 10:27:50 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:28:39 - DEBUG - auth.service - signup with username: test3, fullname: נחליאל פוקרוי
+5.8.2024, 10:28:39 - ERROR - Failed to signup ReferenceError: user is not defined
+5.8.2024, 10:29:21 - DEBUG - auth.service - signup with username: test4, fullname: נחליאל פוקרוי
+5.8.2024, 10:29:21 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:29:21 - DEBUG - auth.route - new account created: {"username":"test4","password":"$2b$10$u2q7EIVJC/tw.AWSFOvKkeQNr4MwMevxQDMR7f76xg4KyH4yW6OP6","fullname":"נחליאל פוקרוי","role":"user","_id":"xq1Gpb"}
+5.8.2024, 10:30:42 - DEBUG - auth.service - signup with username: test5, fullname: נחליאל פוקרוי
+5.8.2024, 10:30:42 - DEBUG - auth.route - new account created: {"username":"test5","password":"$2b$10$LmDEeAGVcsBe76tc9rBA2ORiFXVpqTiHJtJBQQcpvA3JDZpA9Rugq","fullname":"נחליאל פוקרוי","role":"user","_id":"YTA2f0"}
+5.8.2024, 10:30:42 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:32:41 - DEBUG - auth.service - signup with username: test6, fullname: נחליאל פוקרוי
+5.8.2024, 10:32:41 - DEBUG - auth.route - new account created: {"username":"test6","password":"$2b$10$O1TGGI4JL6/14SjI2gFHquVIxDUicqLo1hYVartPlsqq6Pgb3nxJG","fullname":"נחליאל פוקרוי","role":"user","_id":"PZkwWQ"}
+5.8.2024, 10:32:41 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:33:56 - DEBUG - auth.service - signup with username: test1, fullname: נחליאל פוקרוי
+5.8.2024, 10:33:56 - DEBUG - auth.route - new account created: {"username":"test1","password":"$2b$10$zvne205NmiNj96TtI6e6hOZtx/PLl7Bc1h.7ZVuDQAP61n24UkwzO","fullname":"נחליאל פוקרוי","role":"user","_id":"LYIbul"}
+5.8.2024, 10:33:56 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:35:44 - DEBUG - auth.service - signup with username: test2, fullname: נחליאל פוקרוי
+5.8.2024, 10:35:44 - DEBUG - auth.route - new account created: {"username":"test2","password":"$2b$10$xS5HXLtPktos4VBZ1NlH8.beOC1hgEzg9lrUlnG./JJyZt0ogZCui","fullname":"נחליאל פוקרוי","role":"user","_id":"6hspKj"}
+5.8.2024, 10:35:44 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:36:54 - DEBUG - auth.service - signup with username: test3, fullname: נחליאל פוקרוי
+5.8.2024, 10:36:54 - DEBUG - auth.route - new account created: {"username":"test3","password":"$2b$10$rDHTYw4Nebc1SD.zsw.5UubKvgEQZm0zePUWtM3SpTYdT0biOso9m","fullname":"נחליאל פוקרוי","role":"user","_id":"kR3eAt"}
+5.8.2024, 10:36:54 - ERROR - Failed to signup TypeError: Cannot read properties of null (reading '_id')
+5.8.2024, 10:37:56 - DEBUG - auth.service - signup with username: test4, fullname: נחליאל פוקרוי
+5.8.2024, 10:37:56 - DEBUG - auth.route - new account created: {"username":"test4","password":"$2b$10$efgccrXUIx2zgdULKHzo0.JM8KGc3FYW.TWS1iAnI.85PDpJK6Fe6","fullname":"נחליאל פוקרוי","role":"user","_id":"OnAC6d"}
+5.8.2024, 10:38:35 - DEBUG - auth.service - signup with username: test4, fullname: נחליאל פוקרוי
+5.8.2024, 10:39:01 - DEBUG - auth.service - signup with username: test1, fullname: נחליאל פוקרוי
+5.8.2024, 10:39:01 - DEBUG - auth.route - new account created: {"username":"test1","password":"$2b$10$dGahLm1b3pgF2saDO8h7NOVdu5W/X3xBFilLtj8KUjVb/5lbiAUca","fullname":"נחליאל פוקרוי","role":"user","_id":"xPD2n8"}
+5.8.2024, 10:39:39 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+5.8.2024, 10:39:50 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+5.8.2024, 10:40:33 - DEBUG - auth.service - signup with username: test3, fullname: נחליאל פוקרוי
+5.8.2024, 10:40:33 - DEBUG - auth.route - new account created: {"username":"test3","password":"$2b$10$Q3qtGNYk6o.Sz/HzoR1B9um8HHJklT2X8JR5ekAvJqAyNw0RUO2jS","fullname":"נחליאל פוקרוי","role":"user","_id":"BjqTU9"}
+5.8.2024, 10:40:33 - INFO - User signup: | {"_id":"BjqTU9","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:40:58 - DEBUG - auth.service - signup with username: test4, fullname: נחליאל פוקרוי
+5.8.2024, 10:40:58 - DEBUG - auth.route - new account created: {"username":"test4","password":"$2b$10$olfFi4Ax4BbS2nX0.hztdOwdrwTUqbI0AwvTnVb1zfMZMozFSF0Ii","fullname":"נחליאל פוקרוי","role":"user","_id":"ZYryTD"}
+5.8.2024, 10:40:58 - INFO - User signup: | {"_id":"ZYryTD","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:42:13 - DEBUG - auth.service - signup with username: tess, fullname: נחליאל פוקרוי
+5.8.2024, 10:42:13 - DEBUG - auth.route - new account created: {"username":"tess","password":"$2b$10$xxXAVGaMpgHnQ1SSU9nDmORu4R9nulFv3p1UDzN0IiGlpRWpkx.KO","fullname":"נחליאל פוקרוי","role":"user","_id":"DS6BWI"}
+5.8.2024, 10:42:13 - INFO - User signup: | {"_id":"DS6BWI","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:43:19 - DEBUG - auth.service - signup with username: tess1, fullname: נחליאל פוקרוי
+5.8.2024, 10:43:19 - DEBUG - auth.route - new account created: {"username":"tess1","password":"$2b$10$epGnVWaaCKuqzjQ3TvJadOWJzJ0sVXVKo1c1jnCGkKd7O7DSUMLiy","fullname":"נחליאל פוקרוי","role":"user","_id":"EMsJd4"}
+5.8.2024, 10:43:19 - INFO - User signup: | {"_id":"EMsJd4","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:44:59 - DEBUG - auth.service - signup with username: tess2, fullname: נחליאל פוקרוי
+5.8.2024, 10:44:59 - DEBUG - auth.route - new account created: {"username":"tess2","password":"$2b$10$Q4dw6MOnh2qqUnrZlmzhNujveWB33HXwMlyLN4yPEdCchKYzpCTZu","fullname":"נחליאל פוקרוי","role":"user","_id":"Bek3ri"}
+5.8.2024, 10:45:35 - DEBUG - auth.service - signup with username: tess3, fullname: נחליאל פוקרוי
+5.8.2024, 10:45:36 - DEBUG - auth.route - new account created: {"username":"tess3","password":"$2b$10$azR2pp8wtncPB/IvnB9Luu33DJQhZLmYznIICiP2wEd/8SgU7mArO","fullname":"נחליאל פוקרוי","role":"user","_id":"UBOjLU"}
+5.8.2024, 10:45:36 - INFO - User signup: | {"_id":"UBOjLU","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:45:54 - DEBUG - auth.service - signup with username: adminddd, fullname: נחליאל פוקרוי
+5.8.2024, 10:45:54 - DEBUG - auth.route - new account created: {"username":"adminddd","password":"$2b$10$NqChh/Ca6u7KFLyMAwaun.Las/BpjJbaVCFKiZSSiFahuwJwC8E.i","fullname":"נחליאל פוקרוי","role":"user","_id":"K1tBee"}
+5.8.2024, 10:45:54 - INFO - User signup: | {"_id":"K1tBee","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:46:58 - DEBUG - auth.service - signup with username: test99, fullname: נחליאל פוקרוי
+5.8.2024, 10:46:58 - DEBUG - auth.route - new account created: {"username":"test99","password":"$2b$10$q1DnMyn2jQ6PObDCoIy2J.G9JVdxLgs8QQwpGHiwRvpOL9Szsb4Wa","fullname":"נחליאל פוקרוי","role":"user","_id":"TjtR5o"}
+5.8.2024, 10:46:58 - INFO - User signup: | {"_id":"TjtR5o","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:47:05 - INFO - User login:  | null
+5.8.2024, 10:47:16 - DEBUG - auth.service - signup with username: adminddd, fullname: נחליאל פוקרוי
+5.8.2024, 10:47:24 - DEBUG - auth.service - signup with username: admin4545454, fullname: נחליאל פוקרוי
+5.8.2024, 10:47:24 - DEBUG - auth.route - new account created: {"username":"admin4545454","password":"$2b$10$X5ESD18fOZlZI02rQmHm1Oe.KpqrlrX9347cn2hyFyo7NbDXQW3YW","fullname":"נחליאל פוקרוי","role":"user","_id":"QjmXqz"}
+5.8.2024, 10:47:51 - DEBUG - auth.service - signup with username: admin4545454, fullname: נחליאל פוקרוי
+5.8.2024, 10:48:33 - DEBUG - auth.service - signup with username: admin4545454, fullname: נחליאל פוקרוי
+5.8.2024, 10:48:57 - DEBUG - auth.service - signup with username: admin4545222, fullname: נחליאל פוקרוי
+5.8.2024, 10:48:57 - DEBUG - auth.route - new account created: {"username":"admin4545222","password":"$2b$10$oSv0UJN6F.jal8oln3oE.e5if/G9eFiKCEEt6JAp0uw.sA8Ql4FSy","fullname":"נחליאל פוקרוי","role":"user","_id":"xnSxcc"}
+5.8.2024, 10:48:57 - INFO - User signup: | {"_id":"xnSxcc","fullname":"נחליאל פוקרוי","role":"user"}
+5.8.2024, 10:50:55 - DEBUG - auth.service - signup with username: admin, fullname: dfd
+5.8.2024, 10:51:01 - DEBUG - auth.service - signup with username: admin333333, fullname: dfd
+5.8.2024, 10:51:01 - DEBUG - auth.route - new account created: {"username":"admin333333","password":"$2b$10$6ylXrfT7x6/IOeCskCA5..CHcPb6JrpGs7e9rDMLdqgMP6RBfK.Qa","fullname":"dfd","role":"user","_id":"o6lF5I"}
+5.8.2024, 10:51:11 - DEBUG - auth.service - signup with username: admin333333, fullname: dfd
+5.8.2024, 10:51:15 - DEBUG - auth.service - signup with username: admin333333ddd, fullname: dfd
+5.8.2024, 10:51:15 - DEBUG - auth.route - new account created: {"username":"admin333333ddd","password":"$2b$10$U0hCRyB9eVSp93IImb.FBOPhTP3//KH/FT2MJ8JU/4NNZKuD3P4uS","fullname":"dfd","role":"user","_id":"WvODpP"}
+5.8.2024, 10:51:45 - DEBUG - auth.service - signup with username: admin333333dddd, fullname: dfd
+5.8.2024, 10:51:45 - DEBUG - auth.route - new account created: {"username":"admin333333dddd","password":"$2b$10$St6uSMRsQI3QGUjsc9m6KesksH0eMbDUwBd52jGwWhqFpLG0Wxwky","fullname":"dfd","role":"user","_id":"GGlAVz"}
+5.8.2024, 10:51:45 - INFO - User signup: | {"_id":"GGlAVz","fullname":"dfd","role":"user"}
+5.8.2024, 10:51:53 - DEBUG - auth.service - signup with username: admin, fullname: ddd
+5.8.2024, 10:51:56 - DEBUG - auth.service - signup with username: admin343, fullname: ddd
+5.8.2024, 10:51:56 - DEBUG - auth.route - new account created: {"username":"admin343","password":"$2b$10$VWvDaKU.7hDPN2dEDTXP2ukaS9xEbumfioDph7ee2d2QrZIAH6Q4O","fullname":"ddd","role":"user","_id":"6vrQbr"}
+5.8.2024, 10:52:26 - DEBUG - auth.service - signup with username: admin343, fullname: ddd
