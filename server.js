@@ -18,7 +18,7 @@ const corsOptions = {
         'http://localhost:5173',
         'http://127.0.0.1:5174',
         'http://localhost:5174',
-        process.env.VITE_API_URL
+        'https://miss-bug-back.onrender.com/'
 
     ],
     credentials: true
