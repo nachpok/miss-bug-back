@@ -2,12 +2,9 @@ import { authService } from './auth.service.js'
 import { loggerService } from './../../services/logger.service.js';
 
 export async function login(req, res) {
-    console.log("auth.controller - login")
     const { username, password } = req.body
-    console.log("username", username)
-    console.log("password", password)
+  
     try {
-        console.log("auth.controller - login")
         const user = await authService.login(username, password)
         const loginToken = authService.getLoginToken(user)
         loggerService.info('User login: ', user)
@@ -44,7 +41,6 @@ export async function signup(req, res) {
             fullname: user.fullname,
             role: user.role
         }
-        console.log('miniUser', miniUser)
         res.status(201).json(miniUser)
         return
     } catch (err) {

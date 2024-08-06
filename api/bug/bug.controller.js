@@ -98,6 +98,7 @@ export const addBug = async (req, res) => {
     }
 }
 
+//TODO move logic to service
 export const updateBug = async (req, res) => {
     const { _id, title, description, severity, labels } = req.body
 
