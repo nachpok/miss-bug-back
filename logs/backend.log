@@ -755,3 +755,6 @@
 5.8.2024, 10:52:26 - DEBUG - auth.service - signup with username: admin343, fullname: ddd
 5.8.2024, 11:06:19 - INFO - Visited route | /
 5.8.2024, 11:27:23 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
+6.8.2024, 18:19:48 - INFO - Visited route | /
+6.8.2024, 18:19:48 - INFO - Visited route | /
+6.8.2024, 18:19:56 - INFO - Visited route | /
