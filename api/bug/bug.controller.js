@@ -79,10 +79,13 @@ export const removeBug = async (req, res) => {
 export const addBug = async (req, res) => {
 
     const { title, description, severity, labels, creator } = req.body
+    console.log('controller addBug 1', req.body)
+    console.log('controller addBug 1', title, description, severity, labels, creator)
     if (!title || !description || !severity || !labels || !creator) {
         res.status(400).send('All fields are required')
         return
     }
+    console.log('controller addBug 2  ', title, description, severity, labels, creator)
     const bug = { title, description, severity, labels, createdAt: new Date().toISOString(), creator }
 
     if (req.loggedinUser._id !== creator._id) {
@@ -91,8 +94,8 @@ export const addBug = async (req, res) => {
     }
 
     try {
-        await bugService.save(bug)
-        res.send('Bug added')
+        const newBug = await bugService.save(bug)
+        res.json({message: 'Bug added',bug: newBug})
     } catch (error) {
         res.status(404).send(error)
     }
@@ -124,8 +127,8 @@ export const updateBug = async (req, res) => {
             res.status(403).send(`User does not match creator`)
             return
         }
-        await bugService.save({ _id, title, description, severity, labels })
-        res.send('Bug updated')
+        const updatedBug = await bugService.save({ _id, title, description, severity, labels })
+        res.json({message: 'Bug updated', bug: updatedBug})
     } catch (error) {
         res.status(404).send(error)
     }

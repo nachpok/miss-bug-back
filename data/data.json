@@ -2,8 +2,8 @@
   "bugs": [
     {
       "_id": "sdyYU2",
-      "title": "Bug A",
-      "severity": 2,
+      "title": "Bug Adf",
+      "severity": "13",
       "description": "this is some description about nothing",
       "createdAt": "2024-02-20T12:00:00.000Z",
       "labelIds": [
@@ -18,7 +18,7 @@
       "_id": "OLDdun",
       "title": "Bug B",
       "description": "this is some description about nothing",
-      "severity": 44,
+      "severity": 3,
       "creator": {
         "_id": "u102",
         "fullName": "John Doe"
@@ -26,9 +26,9 @@
     },
     {
       "_id": "liugwe3",
-      "title": "Bug C",
-      "severity": 2,
-      "description": "this is some description about nothing",
+      "title": "def",
+      "severity": "5",
+      "description": "abc",
       "createdAt": "2024-02-20T12:00:00.000Z",
       "labelIds": [
         "label2"
@@ -40,8 +40,8 @@
     },
     {
       "_id": "sdfsdf",
-      "title": "Bug D",
-      "severity": 5,
+      "title": "Bug Ddd",
+      "severity": "8",
       "description": "this is some description about nothing",
       "createdAt": "2024-02-21T12:00:00.000Z",
       "labelIds": [
@@ -50,13 +50,17 @@
       "creator": {
         "_id": "u104",
         "fullName": "Jane Smith"
-      }
+      },
+      "labels": [
+        "label1",
+        "label2"
+      ]
     },
     {
       "_id": "oKe4de",
-      "title": "Bug E",
-      "severity": 2,
-      "description": "this is some description about nothing",
+      "title": "Bug Eddd",
+      "severity": "3",
+      "description": "this is some description about nothingddd",
       "createdAt": "2024-02-20T12:00:00.000Z",
       "labelIds": [
         "label1",
@@ -81,6 +85,88 @@
         "_id": "u102",
         "fullName": "John Doe"
       }
+    },
+    {
+      "title": "fsdf",
+      "description": "fsf",
+      "severity": "3",
+      "labels": [
+        "label1"
+      ],
+      "createdAt": "2024-08-07T11:31:46.598Z",
+      "creator": {
+        "_id": "1ArgK0",
+        "fullname": "admin"
+      },
+      "_id": "pXzLg7"
+    },
+    {
+      "title": "ttt",
+      "description": "d",
+      "severity": "3",
+      "labels": [],
+      "createdAt": "2024-08-07T11:33:21.962Z",
+      "creator": {
+        "_id": "1ArgK0",
+        "fullname": "admin"
+      },
+      "_id": "YPkzZ0"
+    },
+    {
+      "title": "fsf",
+      "description": "e",
+      "severity": "3",
+      "labels": [
+        "label1"
+      ],
+      "createdAt": "2024-08-07T11:34:21.457Z",
+      "creator": {
+        "_id": "1ArgK0",
+        "fullname": "admin"
+      },
+      "_id": "vjvn6z"
+    },
+    {
+      "title": "fsf",
+      "description": "e",
+      "severity": "3",
+      "labels": [
+        "label1"
+      ],
+      "createdAt": "2024-08-07T11:34:46.090Z",
+      "creator": {
+        "_id": "1ArgK0",
+        "fullname": "admin"
+      },
+      "_id": "7PoiDe"
+    },
+    {
+      "title": "fsf",
+      "description": "e",
+      "severity": "3",
+      "labels": [
+        "label1"
+      ],
+      "createdAt": "2024-08-07T11:34:47.137Z",
+      "creator": {
+        "_id": "1ArgK0",
+        "fullname": "admin"
+      },
+      "_id": "6tnLsD"
+    },
+    {
+      "title": "fsf",
+      "description": "e",
+      "severity": "3",
+      "labels": [
+        "label1"
+      ],
+      "createdAt": "2024-08-07T11:35:11.349Z",
+      "creator": {
+        "_id": "1ArgK0",
+        "fullname": "admin"
+      },
+      "_id": "IIOeAg"
     }
   ],
   "labels": [

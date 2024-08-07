@@ -130,7 +130,7 @@ async function save(bug) {
         bug._id = makeId()
         bugs.push(bug)
     }
-    await _saveBugsToFile()
+     _saveBugsToFile()
     return bug
 }
 
