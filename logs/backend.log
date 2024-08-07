@@ -1266,3 +1266,33 @@
 7.8.2024, 16:17:34 - INFO - User login:  | {"_id":"1ArgK0","fullname":"admin","role":"admin"}
 7.8.2024, 16:17:36 - INFO - Visited route | /
 7.8.2024, 16:17:36 - INFO - Visited route | /
+7.8.2024, 18:00:55 - INFO - User login:  | null
+7.8.2024, 18:01:05 - DEBUG - auth.service - signup with username: test, fullname: test
+7.8.2024, 18:01:06 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$hf3xb3ymrP5.YZB5QtUt..9UZ8Re.7brKsj5Y5/5oaq2NIH.XSNM2","fullname":"test","role":"user","_id":"47TO8S"}
+7.8.2024, 18:01:08 - DEBUG - auth.service - signup with username: test, fullname: test
+7.8.2024, 18:01:14 - DEBUG - auth.service - signup with username: test1, fullname: test1
+7.8.2024, 18:01:26 - DEBUG - auth.service - signup with username: test123, fullname: test123
+7.8.2024, 18:01:26 - DEBUG - auth.route - new account created: {"username":"test123","password":"$2b$10$ib0f0MvtjQzEd.L762R1aeSx/rgdah6oE2qhWyDwwtk0w7bPv5b9S","fullname":"test123","role":"user","_id":"BIE2nr"}
+7.8.2024, 18:01:28 - DEBUG - auth.service - signup with username: test123, fullname: test123
+7.8.2024, 18:01:44 - DEBUG - auth.service - signup with username: abcdedg, fullname: abcdedg
+7.8.2024, 18:01:45 - DEBUG - auth.route - new account created: {"username":"abcdedg","password":"$2b$10$vMAPnXgQpvkxkicXuCPfxOL3EFShY7xNSOVvsHR7x2CHCiOE8WrOS","fullname":"abcdedg","role":"user","_id":"h0F9lI"}
+7.8.2024, 18:01:45 - INFO - User signup: | {"_id":"h0F9lI","fullname":"abcdedg","role":"user"}
+7.8.2024, 18:01:46 - INFO - Visited route | /
+7.8.2024, 18:01:48 - INFO - Visited route | /
+7.8.2024, 18:02:30 - INFO - Visited route | /
+7.8.2024, 18:02:32 - INFO - Visited route | /
+7.8.2024, 18:02:33 - INFO - Visited route | /
+7.8.2024, 18:02:34 - INFO - Visited route | /
+7.8.2024, 18:02:39 - INFO - Visited route | /
+7.8.2024, 18:02:41 - INFO - Visited route | /
+7.8.2024, 18:03:26 - INFO - Visited route | /
+7.8.2024, 18:03:39 - INFO - Visited route | /
+7.8.2024, 18:03:40 - INFO - Visited route | /
+7.8.2024, 18:03:47 - INFO - Visited route | /
+7.8.2024, 18:04:03 - INFO - Visited route | /
+7.8.2024, 18:04:18 - INFO - Visited route | /
+7.8.2024, 18:04:20 - INFO - Visited route | /
+7.8.2024, 18:04:21 - INFO - Visited route | /
+7.8.2024, 18:04:23 - INFO - Visited route | /
+7.8.2024, 18:04:29 - INFO - Visited route | /
+7.8.2024, 18:04:48 - INFO - User login:  | null
