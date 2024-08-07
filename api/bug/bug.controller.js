@@ -14,7 +14,7 @@ export const getBugs = async (req, res) => {
     if (page && page.trim() !== '') filterBy.page = page
     if (labels) filterBy.labels = labels
     if (creator) filterBy.creator = creator
-    console.log("getBugs", filterBy)
+
     try {
         const bugs = await bugService.query(filterBy)
         res.send(bugs)
@@ -32,17 +32,6 @@ export const getBug = async (req, res) => {
     }
 
     try {
-        // let visitedBugIds = req.cookies.visitedBugIds || []
-        // if (!visitedBugIds.includes(bugId)) {
-        //     visitedBugIds.push(bugId)
-        //     res.cookie('visitedBugIds', visitedBugIds, { maxAge: 3 * 60 * 1000 })
-        // }
-
-        // if (visitedBugIds.length >= 3) {
-        //     res.status(403).send('You have visited 3 bugs in the last 3 hours. Please wait before visiting more bugs.')
-        //     return
-        // }
-        console.log("getBug", bugId)
         const bug = await bugService.getById(bugId)
 
         res.send(bug)
@@ -52,7 +41,6 @@ export const getBug = async (req, res) => {
 }
 
 export const removeBug = async (req, res) => {
-    console.log('controller removeBug', req.params)
     const { bugId } = req.params
 
     if (!bugId) {
@@ -79,13 +67,11 @@ export const removeBug = async (req, res) => {
 export const addBug = async (req, res) => {
 
     const { title, description, severity, labels, creator } = req.body
-    console.log('controller addBug 1', req.body)
-    console.log('controller addBug 1', title, description, severity, labels, creator)
+
     if (!title || !description || !severity || !labels || !creator) {
         res.status(400).send('All fields are required')
         return
     }
-    console.log('controller addBug 2  ', title, description, severity, labels, creator)
     const bug = { title, description, severity, labels, createdAt: new Date().toISOString(), creator }
 
     if (req.loggedinUser._id !== creator._id) {
@@ -127,7 +113,7 @@ export const updateBug = async (req, res) => {
             res.status(403).send(`User does not match creator`)
             return
         }
-        const updatedBug = await bugService.save({ _id, title, description, severity, labels })
+        const updatedBug = await bugService.save({ _id, title, description, severity, labels, creator: bug.creator, createdAt: bug.createdAt })
         res.json({message: 'Bug updated', bug: updatedBug})
     } catch (error) {
         res.status(404).send(error)

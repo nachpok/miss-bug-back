@@ -17,16 +17,13 @@ export async function login(req, res) {
 }
 
 export async function signup(req, res) {
-    console.log("auth.controller - signup")
     try {
 
         const credentials = req.body
         const account = await authService.signup(credentials)
-        console.log('account', account)
         if (account?.error) {
             return res.status(409).send({ err: account.error })
         }
-        console.log('account NO ERROR, credentials', credentials)
         loggerService.debug(`auth.route - new account created: ` + JSON.stringify(account))
 
         const username = credentials.username
@@ -51,7 +48,6 @@ export async function signup(req, res) {
 
 export async function logout(req, res) {
     try {
-        console.log("auth.controller - logout")
         res.clearCookie('loginToken')
         res.send({ msg: 'Logged out successfully' })
     } catch (err) {
@@ -60,7 +56,6 @@ export async function logout(req, res) {
 }
 
 export async function validateUserByCookie(req, res) {
-    console.log("auth.controller - validateUserByCookie")
     const user = await authService.validateUserByCookie(req, res)
     res.json(user)
 }

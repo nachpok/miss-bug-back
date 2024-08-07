@@ -33,7 +33,6 @@ export const bugService = {
 }
 
 async function query(filterBy) {
-    console.log("bug.service - query", filterBy)
     let bugsToReturn = bugs
     try {
         if (filterBy?.title) {
@@ -48,7 +47,6 @@ async function query(filterBy) {
         }
 
         if (filterBy?.labels && filterBy.labels.length > 0) {
-            console.log(filterBy.labels)
             bugsToReturn = bugsToReturn.filter(bug => {
                 return bug.labels?.some(labelId => filterBy.labels.includes(labelId))
             })
@@ -96,7 +94,6 @@ async function query(filterBy) {
 
 async function getById(bugId) {
     const bug = bugs.find(bug => bug._id === bugId)
-    console.log("bug.service - getById", bug)
     if (!bug) {
         throw new Error("Could not find bug with id: " + bugId)
     }
@@ -121,11 +118,9 @@ async function remove(bugId) {
 }
 
 async function save(bug) {
-    console.log("bug.service - save", bug)
     if (bug._id) {
         const bugIdx = bugs.findIndex(b => b._id === bug._id)
         bugs[bugIdx] = { ...bugs[bugIdx], ...bug }
-        console.log("bugs[bugIdx]", bugs[bugIdx])
     } else {
         bug._id = makeId()
         bugs.push(bug)

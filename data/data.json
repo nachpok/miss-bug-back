@@ -3,7 +3,7 @@
     {
       "_id": "sdyYU2",
       "title": "Bug A",
-      "severity": 2,
+      "severity": "5",
       "description": "this is some description about nothing",
       "createdAt": "2024-02-20T12:00:00.000Z",
       "labels": [
@@ -11,7 +11,7 @@
       ],
       "creator": {
         "_id": "u102",
-        "fullName": "John Doe"
+        "fullname": "John Doe"
       }
     },
     {
@@ -21,7 +21,7 @@
       "severity": 44,
       "creator": {
         "_id": "u102",
-        "fullName": "John Doe"
+        "fullname": "John Doe"
       }
     },
     {
@@ -35,7 +35,7 @@
       ],
       "creator": {
         "_id": "u103",
-        "fullName": "John Smith"
+        "fullname": "John Smith"
       }
     },
     {
@@ -50,7 +50,7 @@
       ],
       "creator": {
         "_id": "u104",
-        "fullName": "Jane Smith"
+        "fullname": "Jane Smith"
       }
     },
     {
@@ -65,7 +65,7 @@
       ],
       "creator": {
         "_id": "u104",
-        "fullName": "John Doe"
+        "fullname": "John Doe"
       }
     },
     {
@@ -80,7 +80,7 @@
       ],
       "creator": {
         "_id": "u102",
-        "fullName": "John Doe"
+        "fullname": "John Doe"
       }
     },
     {
@@ -94,12 +94,12 @@
       ],
       "creator": {
         "_id": "u102",
-        "fullName": "John Doe"
+        "fullname": "John Doe"
       }
     },
     {
       "title": "acd",
-      "description": "eee",
+      "description": "eeed",
       "severity": "3",
       "labels": [
         "label2"

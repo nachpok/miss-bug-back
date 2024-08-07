@@ -33,22 +33,18 @@ function validateToken(token) {
 }
 
 async function login(username, password) {
-    console.log("auth.service - login")
     try {
         const user = await userService.getByUsername(username)
-        console.log('login user', user)
         if (!user) {
             throw new Error('Unkown username')
         }
 
         const match = await bcrypt.compare(password, user.password)
-        console.log('login match', match)
         if (!match) {
             throw new Error('Invalid username or password')
         }
 
         const miniUser = _getMiniUser(user)
-        console.log('login miniUser', miniUser)
         return miniUser
     } catch (err) {
         console.log('auth.service - Invalid login token')
@@ -72,7 +68,6 @@ function _getMiniUser(user) {
 
 
 async function validateUserByCookie(req, res) {
-    console.log("auth.service - validateUserByCookie")
     const token = req.cookies['loginToken']
     const user = validateToken(token)
     if (!user) return res.status(401).send('Unauthorized')
