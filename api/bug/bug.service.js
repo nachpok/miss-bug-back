@@ -50,7 +50,7 @@ async function query(filterBy) {
         if (filterBy?.labels && filterBy.labels.length > 0) {
             console.log(filterBy.labels)
             bugsToReturn = bugsToReturn.filter(bug => {
-                return bug.labelIds?.some(labelId => filterBy.labels.includes(labelId))
+                return bug.labels?.some(labelId => filterBy.labels.includes(labelId))
             })
         }
 
@@ -100,7 +100,7 @@ async function getById(bugId) {
     if (!bug) {
         throw new Error("Could not find bug with id: " + bugId)
     }
-    const bugLabels = bug.labelIds?.map(labelId => labels.find(label => label.id === labelId)) || []
+    const bugLabels = bug.labels?.map(labelId => labels.find(label => label.id === labelId)) || []
     bug.labels = bugLabels
     return bug
 }

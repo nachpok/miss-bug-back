@@ -6,7 +6,7 @@
             "severity": 2,
             "description": "this is some description about nothing",
             "createdAt": "2024-02-20T12:00:00.000Z",
-            "labelIds": [
+            "labels": [
                 "label1"
             ],
             "creator": {
@@ -30,7 +30,7 @@
             "severity": 2,
             "description": "this is some description about nothing",
             "createdAt": "2024-02-20T12:00:00.000Z",
-            "labelIds": [
+            "labels": [
                 "label2"
             ],
             "creator": {
@@ -44,7 +44,7 @@
             "severity": 5,
             "description": "this is some description about nothing",
             "createdAt": "2024-02-21T12:00:00.000Z",
-            "labelIds": [
+            "labels": [
                 "label1"
             ],
             "creator": {
@@ -58,7 +58,7 @@
             "severity": 2,
             "description": "this is some description about nothing",
             "createdAt": "2024-02-20T12:00:00.000Z",
-            "labelIds": [
+            "labels": [
                 "label1",
                 "label2"
             ],
@@ -73,7 +73,7 @@
             "severity": 5,
             "description": "this is some description about nothing",
             "createdAt": "2024-02-21T12:00:00.000Z",
-            "labelIds": [
+            "labels": [
                 "label1",
                 "label2"
             ],
@@ -88,7 +88,7 @@
             "severity": 2,
             "description": "this is some description about nothing",
             "createdAt": "2024-02-20T12:00:00.000Z",
-            "labelIds": [
+            "labels": [
                 "label2"
             ],
             "creator": {
