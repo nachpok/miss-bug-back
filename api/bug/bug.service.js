@@ -109,23 +109,24 @@ async function query(filterBy) {
 
     const collection = await dbService.getCollection("bug");
     let bugCursor = await collection.find(criteria, { sort });
+    const totalBugs = await bugCursor.count();
 
-    console.log("filterBy.pageIdx: ", filterBy.pageIdx);
     if (filterBy.pageIdx !== undefined) {
-      console.log("_page: ", filterBy.pageIdx);
       bugCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE);
-      console.log("__end page");
     }
 
     const bugs = await bugCursor.toArray();
     const allLabels = bugs.flatMap((bug) => bug.labels || []);
     const uniqueLabels = [...new Set(allLabels)];
-    console.log("___bugs.len: ", bugs.length);
+
+    const hasNextPage = (filterBy.pageIdx + 1) * PAGE_SIZE < totalBugs;
+
     const data = {
       bugs: bugs,
-      totalBugs: bugs?.length,
+      totalBugs: totalBugs,
       pageSize: PAGE_SIZE,
       labels: uniqueLabels,
+      hasNextPage: hasNextPage,
     };
     return data;
   } catch (err) {
