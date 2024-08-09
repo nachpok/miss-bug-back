@@ -116,8 +116,7 @@ async function query(filterBy) {
     }
 
     const bugs = await bugCursor.toArray();
-    const allLabels = bugs.flatMap((bug) => bug.labels || []);
-    const uniqueLabels = [...new Set(allLabels)];
+    const allLabels = await collection.distinct("labels", {});
 
     const hasNextPage = (filterBy.pageIdx + 1) * PAGE_SIZE < totalBugs;
 
@@ -125,7 +124,7 @@ async function query(filterBy) {
       bugs: bugs,
       totalBugs: totalBugs,
       pageSize: PAGE_SIZE,
-      labels: uniqueLabels,
+      labels: allLabels,
       hasNextPage: hasNextPage,
     };
     return data;
