@@ -3,11 +3,10 @@ import { bugService } from "./bug.service.js";
 import { getCountOfVisitedBugs } from "../../services/util.service.js";
 import { userService } from "../user/user.service.js";
 export const getBugs = async (req, res) => {
-  console.log("req.body", req.body);
   const { title, severity, createdAt, sortBy, pageIdx, labels, creator } =
-    req.body;
+    req.query;
   const filterBy = {};
-
+  console.log("pageIdx: ", pageIdx);
   if (title && title.trim() !== "") filterBy.title = title;
   if (severity && severity.trim() !== "") filterBy.severity = severity;
   if (createdAt && createdAt.trim() !== "") filterBy.createdAt = createdAt;
