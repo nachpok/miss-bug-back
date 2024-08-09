@@ -39,11 +39,13 @@ async function login(username, password) {
     }
 
     const match = await bcrypt.compare(password, user.password);
+    console.log("Match:1 ", match);
     if (!match) {
       throw new Error("Invalid username or password");
     }
 
     const miniUser = _getMiniUser(user);
+    console.log("Mini user, ", miniUser);
     return miniUser;
   } catch (err) {
     console.log("auth.service - Invalid login token");
@@ -92,7 +94,7 @@ async function signup({ username, password, fullname }) {
   if (userExist) return { error: "Username already taken" };
 
   const hash = await bcrypt.hash(password, saltRounds);
-  return userService.addUser({
+  return userService.add({
     username,
     password: hash,
     fullname,

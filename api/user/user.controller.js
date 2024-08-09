@@ -27,7 +27,8 @@ export async function getUser(req, res) {
 export async function updateUser(req, res) {
   try {
     _isAdmin(req, res, async () => {
-      const user = userService.save(req.body);
+      const user = await userService.update(req.body);
+      console.log("updated user: ", user);
       res.send(user);
     });
   } catch (err) {
@@ -38,7 +39,7 @@ export async function updateUser(req, res) {
 
 export async function addUser(req, res) {
   try {
-    const user = userService.addUser(req.body);
+    const user = userService.add(req.body);
     res.send(user);
   } catch (err) {
     res.status(500).send(err);
@@ -50,10 +51,8 @@ export async function removeUser(req, res) {
 
   try {
     _isAdmin(req, res, async () => {
-      const hasBugs = await bugService.query({ userId: req.params.userId });
-      if (
-        hasBugs?.bugs?.some((bug) => bug?.creator?._id === req.params.userId)
-      ) {
+      const hasBugs = await bugService.query({ creator: req.params.userId });
+      if (hasBugs?.bugs?.length > 0) {
         res.status(403).send("User has bugs");
         return;
       }

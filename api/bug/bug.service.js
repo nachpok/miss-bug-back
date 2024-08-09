@@ -216,8 +216,6 @@ async function add(bug) {
 }
 
 async function update(bug) {
-  console.log("__update");
-
   const criteria = { _id: ObjectId.createFromHexString(bug._id) };
   delete bug._id;
   const bugToSave = { ...bug };

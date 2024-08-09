@@ -1397,3 +1397,32 @@
 8.8.2024, 15:54:44 - INFO - Visited route | /:bugId
 8.8.2024, 15:54:49 - INFO - Visited route | /:bugId
 8.8.2024, 15:56:01 - INFO - Visited route | /:bugId
+8.8.2024, 17:21:54 - INFO - Visited route | /
+8.8.2024, 17:22:44 - INFO - User login:  | null
+8.8.2024, 17:23:40 - INFO - User login:  | null
+8.8.2024, 17:24:04 - INFO - User login:  | null
+9.8.2024, 10:46:05 - INFO - User login:  | null
+9.8.2024, 10:46:17 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
+9.8.2024, 10:47:28 - INFO - User login:  | null
+9.8.2024, 10:49:09 - INFO - User login:  | null
+9.8.2024, 10:50:25 - INFO - User login:  | null
+9.8.2024, 10:50:50 - INFO - User login:  | null
+9.8.2024, 10:51:10 - INFO - User login:  | null
+9.8.2024, 10:52:58 - INFO - User login:  | {"_id":"66b4a9f6cbf2ddcb3e3cafba","fullname":"John Doe II","role":"user"}
+9.8.2024, 10:53:35 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
+9.8.2024, 11:00:09 - INFO - User login:  | {"_id":"66b4a9f6cbf2ddcb3e3cafba","fullname":"John Doe II","role":"user"}
+9.8.2024, 11:00:23 - INFO - Visited route | /
+9.8.2024, 11:00:41 - INFO - Visited route | /
+9.8.2024, 11:01:06 - INFO - Visited route | /:bugId
+9.8.2024, 11:01:20 - INFO - Visited route | /:bugId
+9.8.2024, 11:01:34 - INFO - Visited route | /:bugId
+9.8.2024, 11:01:45 - INFO - Visited route | /
+9.8.2024, 11:02:28 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
+9.8.2024, 11:05:30 - DEBUG - auth.service - signup with username: blabla, fullname: user
+9.8.2024, 11:05:30 - ERROR - Failed to signup TypeError: userService.addUser is not a function
+9.8.2024, 11:05:44 - DEBUG - auth.service - signup with username: blabla, fullname: user
+9.8.2024, 11:05:44 - ERROR - Failed to signup TypeError: userService.addUser is not a function
+9.8.2024, 11:06:28 - DEBUG - auth.service - signup with username: blabla, fullname: user
+9.8.2024, 11:06:28 - DEBUG - auth.route - new account created: {"acknowledged":true,"insertedId":"66b5ce042a5d642e593938e4"}
+9.8.2024, 11:06:28 - INFO - User signup: | {"_id":"66b5ce042a5d642e593938e4","fullname":"user","role":"user"}
+9.8.2024, 11:07:42 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
