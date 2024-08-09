@@ -1426,3 +1426,213 @@
 9.8.2024, 11:06:28 - DEBUG - auth.route - new account created: {"acknowledged":true,"insertedId":"66b5ce042a5d642e593938e4"}
 9.8.2024, 11:06:28 - INFO - User signup: | {"_id":"66b5ce042a5d642e593938e4","fullname":"user","role":"user"}
 9.8.2024, 11:07:42 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
+9.8.2024, 11:11:01 - INFO - Visited route | /
+9.8.2024, 11:11:01 - INFO - Visited route | /
+9.8.2024, 11:11:07 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
+9.8.2024, 11:11:10 - INFO - Visited route | /
+9.8.2024, 11:11:12 - INFO - Visited route | /
+9.8.2024, 11:11:12 - INFO - Visited route | /
+9.8.2024, 11:11:23 - INFO - Visited route | /
+9.8.2024, 11:11:25 - INFO - Visited route | /
+9.8.2024, 11:11:25 - INFO - Visited route | /
+9.8.2024, 11:11:30 - INFO - Visited route | /:bugId
+9.8.2024, 11:11:37 - INFO - Visited route | /
+9.8.2024, 11:11:39 - INFO - Visited route | /
+9.8.2024, 11:11:40 - INFO - Visited route | /
+9.8.2024, 11:11:42 - INFO - Visited route | /
+9.8.2024, 11:17:04 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
+9.8.2024, 11:17:11 - INFO - Visited route | /
+9.8.2024, 11:18:16 - INFO - Visited route | /
+9.8.2024, 11:18:16 - INFO - Visited route | /
+9.8.2024, 11:18:19 - INFO - Visited route | /
+9.8.2024, 11:18:43 - INFO - Visited route | /
+9.8.2024, 11:19:24 - INFO - Visited route | /
+9.8.2024, 11:19:36 - INFO - Visited route | /
+9.8.2024, 11:20:57 - INFO - Visited route | /
+9.8.2024, 11:20:57 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:03 - INFO - Visited route | /
+9.8.2024, 11:21:03 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:15 - INFO - Visited route | /
+9.8.2024, 11:21:15 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:23 - INFO - Visited route | /
+9.8.2024, 11:21:24 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:29 - INFO - Visited route | /
+9.8.2024, 11:21:29 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:30 - INFO - Visited route | /
+9.8.2024, 11:21:30 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:30 - INFO - Visited route | /
+9.8.2024, 11:21:30 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:33 - INFO - Visited route | /
+9.8.2024, 11:21:33 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:21:33 - INFO - Visited route | /
+9.8.2024, 11:21:33 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:22:38 - INFO - Visited route | /
+9.8.2024, 11:22:38 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:24:29 - INFO - Visited route | /
+9.8.2024, 11:24:29 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:25:19 - INFO - Visited route | /
+9.8.2024, 11:25:19 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:25:43 - INFO - Visited route | /
+9.8.2024, 11:25:43 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:25:57 - INFO - Visited route | /
+9.8.2024, 11:25:57 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:25:59 - INFO - Visited route | /
+9.8.2024, 11:25:59 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:26:00 - INFO - Visited route | /
+9.8.2024, 11:26:00 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:26:00 - INFO - Visited route | /
+9.8.2024, 11:26:00 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:26:01 - INFO - Visited route | /
+9.8.2024, 11:26:01 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 11:26:02 - INFO - Visited route | /
+9.8.2024, 11:26:02 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 12:11:47 - INFO - Visited route | /
+9.8.2024, 12:11:47 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 12:12:20 - INFO - Visited route | /
+9.8.2024, 12:12:20 - ERROR - TypeError: totalBugs.flatMap is not a function
+9.8.2024, 12:15:58 - INFO - Visited route | /
+9.8.2024, 12:16:00 - INFO - Visited route | /
+9.8.2024, 12:16:49 - INFO - Visited route | /
+9.8.2024, 12:18:27 - INFO - Visited route | /
+9.8.2024, 12:21:58 - INFO - Visited route | /
+9.8.2024, 12:22:23 - INFO - Visited route | /
+9.8.2024, 12:22:34 - INFO - Visited route | /
+9.8.2024, 12:22:44 - INFO - Visited route | /
+9.8.2024, 12:22:53 - INFO - Visited route | /
+9.8.2024, 12:23:04 - INFO - Visited route | /
+9.8.2024, 12:23:33 - INFO - Visited route | /
+9.8.2024, 12:23:40 - INFO - Visited route | /
+9.8.2024, 12:24:23 - INFO - Visited route | /
+9.8.2024, 12:24:23 - ERROR - MongoServerError: $in needs an array
+9.8.2024, 12:25:01 - INFO - Visited route | /
+9.8.2024, 12:25:25 - INFO - Visited route | /
+9.8.2024, 12:25:25 - ERROR - MongoServerError: $in needs an array
+9.8.2024, 12:26:36 - INFO - Visited route | /
+9.8.2024, 12:26:52 - INFO - Visited route | /
+9.8.2024, 12:27:27 - INFO - Visited route | /
+9.8.2024, 12:28:13 - INFO - Visited route | /
+9.8.2024, 12:28:13 - ERROR - SyntaxError: Unexpected token l in JSON at position 1
+9.8.2024, 12:28:51 - INFO - Visited route | /
+9.8.2024, 12:28:51 - ERROR - SyntaxError: Unexpected token l in JSON at position 1
+9.8.2024, 12:29:33 - INFO - Visited route | /
+9.8.2024, 12:29:33 - ERROR - SyntaxError: Unexpected token ' in JSON at position 1
+9.8.2024, 12:30:23 - INFO - Visited route | /
+9.8.2024, 12:30:37 - INFO - Visited route | /
+9.8.2024, 12:31:58 - INFO - Visited route | /
+9.8.2024, 12:32:19 - INFO - Visited route | /
+9.8.2024, 12:32:56 - INFO - Visited route | /
+9.8.2024, 12:33:10 - INFO - Visited route | /
+9.8.2024, 12:33:33 - INFO - Visited route | /
+9.8.2024, 12:33:52 - INFO - Visited route | /
+9.8.2024, 12:34:04 - INFO - Visited route | /
+9.8.2024, 12:35:45 - INFO - Visited route | /
+9.8.2024, 12:36:06 - INFO - Visited route | /
+9.8.2024, 12:36:15 - INFO - Visited route | /
+9.8.2024, 12:36:25 - INFO - Visited route | /
+9.8.2024, 12:36:37 - INFO - Visited route | /
+9.8.2024, 12:36:57 - INFO - Visited route | /
+9.8.2024, 12:37:04 - INFO - Visited route | /
+9.8.2024, 12:37:24 - INFO - Visited route | /
+9.8.2024, 12:37:55 - INFO - Visited route | /
+9.8.2024, 12:37:55 - INFO - Visited route | /
+9.8.2024, 12:38:41 - INFO - Visited route | /
+9.8.2024, 12:38:48 - INFO - Visited route | /
+9.8.2024, 12:39:04 - INFO - Visited route | /
+9.8.2024, 12:40:47 - INFO - Visited route | /
+9.8.2024, 12:51:04 - INFO - Visited route | /
+9.8.2024, 12:51:04 - INFO - Visited route | /
+9.8.2024, 12:58:36 - INFO - Visited route | /
+9.8.2024, 13:01:03 - INFO - Visited route | /
+9.8.2024, 13:01:03 - ERROR - ReferenceError: ISODate is not defined
+9.8.2024, 13:01:18 - INFO - Visited route | /
+9.8.2024, 13:01:18 - ERROR - ReferenceError: ISODate is not defined
+9.8.2024, 13:01:58 - INFO - Visited route | /
+9.8.2024, 13:01:58 - ERROR - ReferenceError: ISODate is not defined
+9.8.2024, 13:03:31 - INFO - Visited route | /
+9.8.2024, 13:05:19 - INFO - Visited route | /
+9.8.2024, 13:05:36 - INFO - Visited route | /
+9.8.2024, 13:05:40 - INFO - Visited route | /
+9.8.2024, 13:05:41 - INFO - Visited route | /
+9.8.2024, 13:05:49 - INFO - Visited route | /
+9.8.2024, 13:05:51 - INFO - Visited route | /
+9.8.2024, 13:05:51 - INFO - Visited route | /
+9.8.2024, 13:06:37 - INFO - Visited route | /
+9.8.2024, 13:06:47 - INFO - Visited route | /
+9.8.2024, 13:06:47 - ERROR - BSONError: hex string must be 24 characters
+9.8.2024, 13:06:56 - INFO - Visited route | /
+9.8.2024, 13:07:50 - INFO - Visited route | /
+9.8.2024, 13:07:56 - INFO - Visited route | /
+9.8.2024, 13:07:56 - ERROR - Error: Error with creator id
+9.8.2024, 13:08:31 - INFO - Visited route | /
+9.8.2024, 13:08:31 - ERROR - Error: Error with creator id
+9.8.2024, 13:08:54 - INFO - Visited route | /
+9.8.2024, 13:08:54 - ERROR - Error: Error with creator id
+9.8.2024, 13:09:15 - INFO - Visited route | /
+9.8.2024, 13:09:15 - ERROR - Error: Error with creator id
+9.8.2024, 13:09:23 - INFO - Visited route | /
+9.8.2024, 13:09:37 - INFO - Visited route | /
+9.8.2024, 13:09:37 - ERROR - Error: Error with creator id
+9.8.2024, 13:09:49 - INFO - Visited route | /
+9.8.2024, 13:10:56 - INFO - Visited route | /
+9.8.2024, 13:11:02 - INFO - Visited route | /
+9.8.2024, 13:11:03 - INFO - Visited route | /
+9.8.2024, 13:11:04 - INFO - Visited route | /
+9.8.2024, 13:11:08 - INFO - Visited route | /
+9.8.2024, 13:11:39 - INFO - Visited route | /
+9.8.2024, 13:12:01 - INFO - Visited route | /
+9.8.2024, 13:16:01 - INFO - Visited route | /
+9.8.2024, 13:17:12 - INFO - Visited route | /
+9.8.2024, 13:18:40 - INFO - Visited route | /
+9.8.2024, 13:18:46 - INFO - Visited route | /
+9.8.2024, 13:18:53 - INFO - Visited route | /
+9.8.2024, 13:19:02 - INFO - Visited route | /
+9.8.2024, 13:19:22 - INFO - User login:  | {"_id":"66b4aa34e0dd42115ebcdc6d","fullname":"admin","role":"admin"}
+9.8.2024, 13:19:31 - INFO - Visited route | /
+9.8.2024, 13:19:36 - INFO - Visited route | /
+9.8.2024, 13:19:40 - INFO - Visited route | /
+9.8.2024, 13:20:24 - INFO - Visited route | /
+9.8.2024, 13:21:05 - INFO - Visited route | /
+9.8.2024, 13:21:06 - INFO - Visited route | /
+9.8.2024, 13:21:28 - INFO - Visited route | /
+9.8.2024, 13:22:49 - INFO - Visited route | /
+9.8.2024, 13:23:00 - INFO - Visited route | /
+9.8.2024, 13:23:00 - ERROR - ReferenceError: PAGE_SIZE is not defined
+9.8.2024, 13:24:02 - INFO - Visited route | /
+9.8.2024, 13:24:02 - ERROR - ReferenceError: PAGE_SIZE is not defined
+9.8.2024, 13:24:22 - INFO - Visited route | /
+9.8.2024, 13:24:36 - INFO - Visited route | /
+9.8.2024, 13:24:36 - ERROR - ReferenceError: PAGE_SIZE is not defined
+9.8.2024, 13:24:59 - INFO - Visited route | /
+9.8.2024, 13:24:59 - ERROR - ReferenceError: PAGE_SIZE is not defined
+9.8.2024, 13:25:35 - INFO - Visited route | /
+9.8.2024, 13:25:35 - ERROR - ReferenceError: PAGE_SIZE is not defined
+9.8.2024, 13:26:00 - INFO - Visited route | /
+9.8.2024, 13:26:00 - ERROR - ReferenceError: BUGS_PER_PAGE is not defined
+9.8.2024, 13:26:46 - INFO - Visited route | /
+9.8.2024, 13:26:46 - ERROR - ReferenceError: BUGS_PER_PAGE is not defined
+9.8.2024, 13:26:46 - INFO - Visited route | /
+9.8.2024, 13:26:46 - ERROR - ReferenceError: BUGS_PER_PAGE is not defined
+9.8.2024, 13:26:49 - INFO - Visited route | /
+9.8.2024, 13:26:49 - ERROR - ReferenceError: BUGS_PER_PAGE is not defined
+9.8.2024, 13:26:49 - INFO - Visited route | /
+9.8.2024, 13:26:49 - ERROR - ReferenceError: BUGS_PER_PAGE is not defined
+9.8.2024, 13:26:57 - INFO - Visited route | /
+9.8.2024, 13:26:57 - ERROR - ReferenceError: BUGS_PER_PAGE is not defined
+9.8.2024, 13:26:57 - INFO - Visited route | /
+9.8.2024, 13:26:57 - ERROR - ReferenceError: BUGS_PER_PAGE is not defined
+9.8.2024, 13:27:23 - INFO - Visited route | /
+9.8.2024, 13:27:23 - INFO - Visited route | /
+9.8.2024, 13:27:31 - INFO - Visited route | /
+9.8.2024, 13:28:26 - INFO - Visited route | /
+9.8.2024, 13:28:46 - INFO - Visited route | /
+9.8.2024, 13:28:59 - INFO - Visited route | /
+9.8.2024, 13:29:18 - INFO - Visited route | /
+9.8.2024, 13:29:49 - INFO - Visited route | /
+9.8.2024, 13:30:11 - INFO - Visited route | /
+9.8.2024, 13:30:35 - INFO - Visited route | /
+9.8.2024, 13:32:19 - INFO - Visited route | /
+9.8.2024, 13:32:58 - INFO - Visited route | /
+9.8.2024, 13:33:17 - INFO - Visited route | /
+9.8.2024, 13:33:46 - INFO - Visited route | /
+9.8.2024, 13:33:53 - INFO - Visited route | /
+9.8.2024, 13:33:59 - INFO - Visited route | /

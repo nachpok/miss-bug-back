@@ -11,8 +11,9 @@ import dayjs from "dayjs";
 import { dbService } from "../../services/db.service.js";
 import { asyncLocalStorage } from "../../services/als.service.js";
 import { updateBug } from "./bug.controller.js";
+import { log } from "../../middlewares/log.middleware.js";
 
-const BUGS_PER_PAGE = 5;
+const PAGE_SIZE = 5;
 let bugs = [];
 let labels = [];
 
@@ -48,78 +49,82 @@ export const bugService = {
 
 async function query(filterBy) {
   console.log("filterBy", filterBy);
-  // const criteria = _buildCriteria(filterBy)
-  const collection = await dbService.getCollection("bug");
-  let bugsToReturn = await collection.find().toArray();
 
   try {
+    const criteria = {};
+    const sort = {};
+
     if (filterBy?.title) {
-      const regex = new RegExp(`^${filterBy.title}`, "i");
-      bugsToReturn = bugsToReturn.filter((bug) => regex.test(bug.title));
+      criteria.title = { $regex: `^${filterBy.title}`, $options: "i" };
     }
+
     if (filterBy?.severity) {
-      bugsToReturn = bugsToReturn.filter(
-        (bug) => bug.severity == filterBy.severity
-      );
+      criteria.severity = parseInt(filterBy.severity);
     }
+
     if (filterBy?.createdAt) {
-      bugsToReturn = bugsToReturn.filter((bug) =>
-        dayjs(bug.createdAt).isSame(dayjs(filterBy.createdAt), "day")
-      );
+      const startOfDay = dayjs(filterBy.createdAt).startOf("day").toISOString();
+      const endOfDay = dayjs(filterBy.createdAt).endOf("day").toISOString();
+      criteria.createdAt = {
+        $gte: startOfDay,
+        $lte: endOfDay,
+      };
     }
 
     if (filterBy?.labels && filterBy.labels.length > 0) {
-      bugsToReturn = bugsToReturn.filter((bug) => {
-        return bug.labels?.some((labelId) => filterBy.labels.includes(labelId));
-      });
+      try {
+        if (Array.isArray(filterBy.labels) && filterBy.labels.length > 0) {
+          criteria.labels = { $in: filterBy.labels };
+        }
+      } catch (error) {
+        console.error("Error parsing labels:", error);
+        // Handle the error as needed
+      }
+    }
+
+    if (filterBy?.creator) {
+      try {
+        if (/^[0-9a-fA-F]{24}$/.test(filterBy.creator)) {
+          const creatorId = ObjectId.createFromHexString(filterBy.creator);
+          criteria["creator._id"] = creatorId;
+        } else {
+          console.warn("Invalid creator ID format:", filterBy.creator);
+        }
+      } catch (e) {
+        throw Error("Error with creator id");
+      }
     }
 
     if (filterBy?.sortBy) {
       switch (filterBy.sortBy) {
         case "severity":
-          bugsToReturn = bugsToReturn.sort((a, b) => a.severity - b.severity);
-          break;
         case "createdAt":
-          bugsToReturn = bugsToReturn.sort((a, b) =>
-            dayjs(a.createdAt).isAfter(dayjs(b.createdAt)) ? 1 : -1
-          );
-          break;
         case "title":
-          bugsToReturn = bugsToReturn.sort((a, b) =>
-            a.title.localeCompare(b.title)
-          );
+          sort[filterBy.sortBy] = 1;
           break;
         default:
-          bugsToReturn = bugsToReturn.sort((a, b) =>
-            dayjs(a[filterBy.sortBy]).isAfter(dayjs(b[filterBy.sortBy]))
-              ? 1
-              : -1
-          );
+          sort[filterBy.sortBy] = 1;
       }
     }
 
-    if (filterBy?.isPaginated === "true" && filterBy?.page) {
-      const page = parseInt(filterBy.page);
-      const bugsToSlice = bugsToReturn.slice(
-        (page - 1) * BUGS_PER_PAGE,
-        page * BUGS_PER_PAGE
-      );
-      bugsToReturn = bugsToSlice;
+    const collection = await dbService.getCollection("bug");
+    let bugCursor = await collection.find(criteria, { sort });
+
+    console.log("filterBy.pageIdx: ", filterBy.pageIdx);
+    if (filterBy.pageIdx !== undefined) {
+      console.log("_page: ", filterBy.pageIdx);
+      bugCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE);
+      console.log("__end page");
     }
 
-    if (filterBy?.creator) {
-      bugsToReturn = bugsToReturn.filter(
-        (bug) => bug?.creator?._id === filterBy.creator
-      );
-    }
-
-    const allLabels = bugsToReturn.flatMap((bug) => bug.labels || []);
+    const bugs = await bugCursor.toArray();
+    const allLabels = bugs.flatMap((bug) => bug.labels || []);
     const uniqueLabels = [...new Set(allLabels)];
-
+    console.log("___bugs.len: ", bugs.length);
     const data = {
-      bugs: bugsToReturn,
-      totalBugs: bugsToReturn?.length,
-      pageSize: BUGS_PER_PAGE,
+      bugs: bugs,
+      totalBugs: bugs?.length,
+      pageSize: PAGE_SIZE,
       labels: uniqueLabels,
     };
     return data;

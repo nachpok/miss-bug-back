@@ -3,26 +3,16 @@ import { bugService } from "./bug.service.js";
 import { getCountOfVisitedBugs } from "../../services/util.service.js";
 import { userService } from "../user/user.service.js";
 export const getBugs = async (req, res) => {
-  console.log("req.query", req.query);
-  const {
-    title,
-    severity,
-    createdAt,
-    sortBy,
-    isPaginated,
-    page,
-    labels,
-    creator,
-  } = req.query;
+  console.log("req.body", req.body);
+  const { title, severity, createdAt, sortBy, pageIdx, labels, creator } =
+    req.body;
   const filterBy = {};
 
   if (title && title.trim() !== "") filterBy.title = title;
   if (severity && severity.trim() !== "") filterBy.severity = severity;
   if (createdAt && createdAt.trim() !== "") filterBy.createdAt = createdAt;
   if (sortBy && sortBy.trim() !== "") filterBy.sortBy = sortBy;
-  if (isPaginated && isPaginated.trim() !== "")
-    filterBy.isPaginated = isPaginated;
-  if (page && page.trim() !== "") filterBy.page = page;
+  if (pageIdx && pageIdx.trim() !== "") filterBy.pageIdx = pageIdx;
   if (labels) filterBy.labels = labels;
   if (creator) filterBy.creator = creator;
 
